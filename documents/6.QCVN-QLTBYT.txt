@@ -1,0 +1,240 @@
+QCVN 04:2025/BYT
+QUY CHUẨN KỸ THUẬT QUỐC GIA VỀ CẤU TRÚC THÔNG ĐIỆP DỮ LIỆU TRAO ĐỔI VỚI CƠ SỞ DỮ LIỆU TỔNG HỢP QUỐC GIA VỀ THIẾT BỊ Y TẾ
+LỜI NÓI ĐẦU
+QCVN 04:2025/BYT do Cục Khoa học Công nghệ và Đào tạo, Bộ Y tế chủ trì, phối hợp với Viện nghiên cứu Tâm Anh biên soạn, Bộ Khoa học và Công nghệ thẩm định, Bộ trưởng Bộ Y tế ban hành kèm theo Thông tư số 0    /2025/TT-BYT  ngày 01 tháng 9 năm 2025.
+QUY ĐỊNH CHUNG
+Phạm vi điều chỉnh
+Quy chuẩn kỹ thuật quốc gia về cấu trúc thông điệp dữ liệu trao đổi với Cơ sở dữ liệu quốc gia về y tế quy định các yêu cầu kỹ thuật về cấu trúc thông điệp dữ liệu trao đổi giữa cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành Y tế, hệ thống thông tin có kết nối, trao đổi dữ liệu với cơ sở dữ liệu tổng hợp quốc gia, cơ sở dữ liệu chuyên ngành Y tế.
+Quy chuẩn kỹ thuật này không bao gồm: các nội dung thông tin mở rộng bổ sung trong quá trình trao đổi các thông điệp dữ liệu (các tham số ngữ cảnh, dữ liệu kiểm soát truyền tin, giao thức) được sử dụng để đóng gói thông điệp dữ liệu chính cần trao đổi; dữ liệu thống kê phát sinh.
+Đối tượng áp dụng
+Quy chuẩn kỹ thuật quốc gia này áp dụng đối với:
+2.1. Trung tâm dữ liệu quốc gia.
+2.2. Trung tâm dữ liệu Y tế quốc gia.
+2.3. Cơ quan, tổ chức, cá nhân có cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành Y tế, hệ thống thông tin có kết nối, trao đổi dữ liệu với Cơ sở dữ liệu tổng hợp quốc gia, cơ sở dữ liệu chuyên ngành Y tế theo quy định của pháp luật.
+2.4. Các cơ quan, tổ chức, cá nhân có liên quan đến hoạt động kết nối, chia sẻ, trao đổi dữ liệu với Cơ sở dữ liệu tổng hợp quốc gia.
+Tài liệu viện dẫn
+Căn cứ Luật Tiêu chuẩn và Quy chuẩn kỹ thuật số 68/2006/QH11 ngày 29 tháng 06 năm 2006;
+Căn cứ Luật Công nghệ thông tin số 67/2006/QH11 ngày 29 tháng 6 năm 2006;
+Căn cứ Luật Dữ liệu số 60/2024/QH15 ngày 30 tháng 11 năm 2024;
+Căn cứ Luật Giao dịch điện tử số 20/2023/QH15 ngày 22 tháng 6 năm 2023;
+Căn cứ Luật Tiếp cận thông tin số 104/2016/QH13 ngày 06 tháng 4 năm 2016;
+Căn cứ Luật An ninh mạng số 24/2018/QH14 ngày 12 tháng 6 năm 2018;
+Căn cứ Luật An toàn thông tin mạng số 86/2015/QH13 ngày 19 tháng 11 năm 2015;
+Căn cứ Luật sửa đổi, bổ sung một số điều của 37 Luật có liên quan đến quy hoạch số 35/2018/QH14 ngày 20 tháng 11 năm 2018;
+Căn cứ Luật Khám bệnh, chữa bệnh số 15/2023/QH15 ngày 09 tháng 01 năm 2023;
+Căn cứ Luật Dược số 105/2016/QH13 ngày 06 tháng 4 năm 2016; Luật sửa đổi, bổ sung một số điều của Luật dược số 44/2024/QH15 ngày 21 tháng 11 năm 2024; 
+Căn cứ Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam số 47/2014/QH13 ngày 16 tháng 6 năm 2014 của Quốc hội, được sửa đổi, bổ sung bởi: Luật số 51/2019/QH14 ngày 25 tháng 11 năm 2019 của Quốc hội sửa đổi, bổ sung một số điều của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam; Luật số 23/2023/QH15 ngày 24 tháng 6 năm 2023 của Quốc hội sửa đổi, bổ sung một số điều của Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam;
+Căn cứ Luật thi đua, khen thưởng số 06/2022/QH15 ngày 15 tháng 6 năm 2022;
+Luật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội; được sửa đổi bổ sung bởi: Luật số 36/2009/QH12 ngày 19 tháng 6 năm 2009 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ; Luật số 42/2019/QH14 ngày 14 tháng 6 năm 2019 của Quốc hội sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm, Luật Sở hữu trí tuệ; Luật số 07/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ;
+Căn cứ Luật Xử lý vi phạm hành chính số 15/2012/QH13 ngày 20 tháng 6 năm 2012 của Quốc hội, được sửa đổi, bổ sung bởi: Luật Hải quan số 54/2014/QH13 ngày 23 tháng 6 năm 2014 của Quốc hội; Luật Thủy sản số 18/2017/QH14 ngày 21 tháng 11 năm 2017 của Quốc hội; Luật số 67/2020/QH14 ngày 13 tháng 11 năm 2020 của Quốc hội sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính; Luật số 09/2022/QH15 ngày 09 tháng 11 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Tần số vô tuyến điện; Luật Thanh tra số 11/2022/QH15 ngày 14 tháng 11 năm 2022 của Quốc hội;
+Căn cứ Bộ luật Hình sự số 100/2015/QH13 ngày 27 tháng 11 năm 2015 của Quốc hội, được sửa đổi bổ sung bởi: Luật số 12/2017/QH14 ngày 20 tháng 6 năm 2017 của Quốc hội sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13;
+Căn cứ Luật trợ giúp pháp lý số 11/2017/QH14 ngày 20 tháng 6 năm 2017;
+Căn cứ Luật Quản lý thuế số 38/2019/QH14 ngày 13 tháng 6 năm 2019;
+Căn cứ Luật Đầu tư số 61/2020/QH14 ngày 17 tháng 6 năm 2020 của Quốc hội, được sửa đổi, bổ sung bởi: Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17 tháng 11 năm 2020 của Quốc hội; Luật số 03/2022/QH15 ngày 11 tháng 01 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Đầu tư công, Luật Đầu tư theo phương thức đối tác công tư, Luật Đầu tư, Luật Nhà ở, Luật Đấu thầu, Luật Điện lực, Luật Doanh nghiệp, Luật Thuế tiêu thụ đặc biệt và Luật Thi hành án dân sự, có hiệu lực kể từ ngày 01 tháng 3 năm 2022;
+Căn cứ Luật Khoa học và công nghệ số 29/2013/QH13 ngày 18 tháng 6 năm 2013 của Quốc hội, được sửa đổi, bổ sung bởi: Luật số 28/2018/QH14 ngày 15 tháng 6 năm 2018 của Quốc hội sửa đổi, bổ sung một số điều của 11 luật có liên quan đến quy hoạch; Luật số 07/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ;
+Căn cứ Nghị định số 127/2007/NĐ-CP ngày 01 tháng 8 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Tiêu chuẩn và quy chuẩn kỹ thuật;
+Căn cứ Nghị định số 78/2018/NĐ-CP ngày 16 tháng 5 năm 2018 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 127/2007/NĐ-CP ngày 01 tháng 8 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Tiêu chuẩn và quy chuẩn kỹ thuật;
+Căn cứ Nghị định số 102/2025/NĐ-CP ngày 13 tháng 5 năm 2025 của Chính phủ quy định quản lý dữ liệu y tế;
+Căn cứ Nghị định số 165/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ quy định chi tiết và biện pháp thi hành Luật Dữ liệu;
+Căn cứ Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý trang thiết bị y tế; Nghị định số 07/2023/NĐ-CP ngày 03 tháng 3 năm 2023 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý trang thiết bị y tế;
+Căn cứ Nghị định số 42/2025/NĐ-CP ngày 27 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế;
+Căn cứ Thông tư số 53/2014/TT-BYT ngày 29 tháng 12 năm 2014  của Bộ Y tế quy định điều kiện hoạt động y tế trên môi trường mạng;
+Căn cứ Thông tư số 49/2017/TT-BYT ngày 28 tháng 12 năm 2017 của Bộ Y tế quy định về hoạt động y tế từ xa;
+Căn cứ Thông tư số 54/2017/TT-BYT ngày 29 tháng 12 năm 2017 của Bộ Y tế Ban hành Bộ tiêu chí ứng dụng CNTT tại các cơ sở khám bệnh, chữa bệnh;
+Căn cứ Thông tư số 13/2025/TT-BYT ngày 6 tháng 6 năm 2025 của Bộ Y tế hướng dẫn triển khai hồ sơ bệnh án điện tử;
+Căn cứ Thông tư số 48/2017/TT-BYT ngày 28 tháng 12 năm 2017 của Bộ Y tế quy định trích chuyển dữ liệu điện tử trong quản lý và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Căn cứ Thông tư số 26/2025/TT-BYT ngày 30 tháng 6 năm 2025 của Bộ Y tế quy định về đơn thuốc và việc kê đơn thuốc hóa dược, sinh phẩm trong điều trị ngoại trú tại cơ sở khám bệnh, chữa bệnh;
+Căn cứ Thông tư số 30/2023/TT-BYT ngày 30 tháng 12 năm 2023 của Bộ Y tế quy định danh mục bệnh, tình trạng bệnh được khám bệnh, chữa bệnh từ xa ;
+Căn cứ Quyết định số 831/QĐ-BYT ngày 11 tháng 3 năm 2017 của Bộ Y tế về việc ban hành Mẫu hồ sơ quản lý sức khỏe cá nhân phục vụ chăm sóc sức khỏe ban đầu;
+Căn cứ Quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 của Bộ Y tế Quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế và giải quyết các chế độ liên quan; 
+Căn cứ Quyết định số 3176/QĐ-BYT ngày 29 tháng 10 năm 2024 của Bộ Y tế sửa đổi, bổ sung quyết định số 4750/QĐ-BYT ngày 29 tháng 12 năm 2023 của bộ trưởng bộ y tế sửa đổi, bổ sung quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định, thanh toán chi phí khám bệnh, chữa bệnh và giải quyết các chế độ liên quan;
+Căn cứ Quyết định số 4750/QĐ-BYT ngày 29 tháng 12 năm 2023 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định, thanh toán chi phí khám bệnh, chữa bệnh và giải quyết các chế độ liên quan; 
+Căn cứ Quyết định số 1928/QĐ-BYT ngày 21 tháng 4 năm 2023 của Bộ trưởng Bộ Y tế ban hành Kiến trúc Chính phủ điện tử của Bộ Y tế phiên bản 2.1 (Quyết định 1928/QĐ-BYT);
+Căn cứ Quyết định số 28/QĐ-BYT ngày 05 tháng 1 năm 2021 của Bộ trưởng Bộ Y tế Ban hành Bộ tiêu chí Công nghệ thông tin để thực hiện hoạt động y tế từ xa;
+Căn cứ Quyết định số 3074/QĐ-TTg ngày 11 tháng 11 năm 2022 của Bộ trưởng Bộ Y tế về việc quy định nhóm thông tin cơ bản về y tế thuộc cơ sở dữ liệu quốc gia về bảo hiểm;
+Căn cứ Quyết định số 1332/QĐ-BYT ngày 21 tháng 5 năm 2024 của Bộ trưởng Bộ Y tế về ban hành Sổ sức khỏe điện tử phục vụ tích hợp trên ứng dụng VNeID;
+Căn cứ Quyết định số 2733/QĐ-BYT ngày 17 tháng 9 năm 2024 của Bộ Y tế về hướng dẫn thí điểm thực hiện Sổ sức khỏe điện tử phục vụ tích hợp trên ứng dụng VNeID (gọi tắt là Sổ sức khỏe điện tử VNeID). 
+Quyết định số 384/QĐ-BYT ngày 01 tháng 02 năm 2019 của Bộ trưởng Bộ Y tế ban hành nguyên tắc cấp mã cơ sở khám bệnh, chữa bệnh;
+Quyết định số 1921/QĐ-BYT ngày 12 tháng 7 năm 2022 của Bộ trưởng Bộ Y tế ban hành hướng dẫn ghi phiếu chẩn đoán nguyên nhân tử vong tại các cơ sở khám chữa bệnh;
+Quyết định số 7603/QĐ-BYT ngày 25 tháng 12 năm 2018 của Bộ trưởng Bộ Y tế về việc ban hành bộ mã danh mục dùng chung áp dụng trong quản lý khám bệnh, chữa bệnh và thanh toán bảo hiểm y tế (phiên bản số 6);
+Quyết định số 4400/QĐ-BYT của Bộ trưởng Bộ Y tế ngày 23 tháng 10 năm 2020 về việc ban hành “bảng phân loại quốc tế mã hóa bệnh tật, nguyên nhân tử vong icd-10” và “hướng dẫn mã hóa bệnh tật theo icd-10” tại các cơ sở khám bệnh, chữa bệnh”
+Quyết định số 4469/QĐ-BYT ngày 28 tháng 10 năm 2020 của Bộ trưởng Bộ Y tế về việc ban hành "Bảng phân loại quốc tế mã hoá bệnh tật, nguyên nhân tử vong icd-10" và "Hướng dẫn mã hoá bệnh tật theo ICD-10" tại các cơ sở khám bệnh, chữa bệnh" được sửa đổi, bổ sung bởi: Quyết định số 98/QĐ-BYT ngày 14/01/2022 về việc ban hành danh mục bổ sung một số mã ICD-10 liên quan đến covid-19 theo hướng dẫn của tổ chức y tế thế giới.
+Quyết định số 5937/QĐ-BYT ngày 30 tháng 12 năm 2021 của Bộ trưởng Bộ Y tế ban hành bổ sung các danh mục mã dùng chung áp dụng trong quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Quyết định số 824/QĐ-BYT ngày 15 tháng 02 năm 2023 của Bộ trưởng Bộ Y tế ban hành bổ sung các danh mục mã dùng chung áp dụng trong quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Nghị định số 47/2020/NĐ-CP ngày 09 tháng 4 năm 2020 của Chính phủ về quản lý, kết nối và chia sẻ dữ liệu số của cơ quan nhà nước;
+Nghị định số 42/2022/NĐ-CP ngày 24 tháng 6 năm 2022 của Chính phủ quy định về việc cung cấp thông tin và dịch vụ công trực tuyến của cơ quan nhà nước trên môi trường mạng;
+Nghị định số 47/2024/NĐ-CP ngày 09 tháng 5 năm 2024 của Chính phủ quy định về danh mục cơ sở dữ liệu quốc gia; việc xây dựng, cập nhật, duy trì, khai thác và sử dụng cơ sở dữ liệu quốc gia
+Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang, được sửa đổi, bổ sung bởi: Nghị định số 76/2009/NĐ-CP ngày 15 tháng 9 năm 2009 của Chính phủ về sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang; Nghị định số 14/2012/NĐ-CP ngày 07 tháng 3 năm 2012 của Chính phủ về sửa đổi Điều 7 Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang và Mục I Bảng phụ cấp chức vụ lãnh đạo (bầu cử, bổ nhiệm) trong các cơ quan nhà nước, đơn vị sự nghiệp của Nhà nước; cơ quan, đơn vị thuộc Quân đội nhân dân và Công an nhân dân ban hành kèm theo Nghị định số 204/2004/NĐ-CP; Nghị định số 17/2013/NĐ- CP ngày 19 tháng 02 năm 2013 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang; Nghị định số 117/2016/NĐ-CP ngày 21 tháng 7 năm 2016 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang;
+Nghị định số 90/2020/NĐ-CP ngày 13 tháng 8 năm 2020 của Chính phủ về đánh giá, xếp loại chất lượng cán bộ, công chức, viên chức;
+Nghị định số 112/2020/NĐ-CP ngày 18 tháng 9 năm 2020 của Chính phủ về xử lý kỷ luật cán bộ công chức viên chức; được sửa đổi, bổ sung bởi Nghị định số 71/2023/NĐ- CP ngày 20 tháng 9 năm 2023 của Chính phủ;
+Nghị định số 103/2017/NĐ-CP ngày 12 tháng 9 năm 2017 của Chính phủ quy định về thành lập, tổ chức, hoạt động, giải thể và quản lý các cơ sở trợ giúp xã hội; được sửa đổi, bổ sung bởi Nghị định số 140/2018/NĐ-CP ngày 08 tháng 10 năm 2018 của Chính phủ;
+Quyết định số 142/QĐ-TTg ngày 02 tháng 02 năm 2024 của Thủ tướng Chính phủ phê duyệt Chiến lược dữ liệu quốc gia đến năm 2030;
+Quyết định số 124/2004/QĐ-TTg ngày 08 tháng 7 năm 2004 của Thủ tướng Chính phủ về việc ban hành Bảng danh mục và mã số các đơn vị hành chính Việt Nam;
+Quyết định số 27/2018/QĐ-TTg ngày 06 tháng 7 năm 2018 của Thủ tướng Chính phủ ban hành hệ thống ngành kinh tế Việt Nam;
+Quyết định số 34/2020/QĐ-TTg ngày 26 tháng 11 năm 2020 của Thủ tướng Chính phủ ban hành Danh mục nghề nghiệp Việt Nam;
+Thông tư số 13/2017/TT-BTTTT ngày 23 tháng 6 năm 2017 của Bộ trưởng Bộ Thông tin và Truyền thông quy định các yêu cầu kỹ thuật về kết nối các hệ thống thông tin, cơ sở dữ liệu với cơ sở dữ liệu quốc gia;
+Thông tư số 02/2017/TT-BTTTT ngày 04 tháng 4 năm 2017 của Bộ trưởng Bộ Thông tin và Truyền thông ban hành "Quy chuẩn kỹ thuật quốc gia về cấu trúc thông điệp dữ liệu công dân trao đổi với cơ sở dữ liệu Quốc gia về dân cư" (QCVN 109:2017/BTTTT);
+Thông tư số 08/2023/TT-BTNMT ngày 31 tháng 7 năm 2023 của Bộ trưởng Bộ Tài nguyên và Môi trường ban hành Quy chuẩn kỹ thuật quốc gia về cơ sở dữ liệu nền địa lý quốc gia tỷ lệ 1:2.000, 1:5.000, 1:10.000 (QCVN 73:2023/BTNMT);
+Thông tư số 09/2024/TT-BTNMT ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định về nội dung, cấu trúc, kiểu thông tin cơ sở dữ liệu quốc gia về đất đai và yêu cầu kỹ thuật đối với phần mềm ứng dụng của Hệ thống thông tin quốc gia về đất đai;
+Thông tư số 12/2017/TT-BGTVT ngày 15 tháng 4 năm 2017 của Bộ trưởng Bộ Giao thông vận tải quy định về đào tạo, sát hạch, cấp giấy phép lái xe cơ giới đường bộ; được sửa đổi, bổ sung bởi: Thông tư số 05/2024/TT-BGTVT ngày 31 tháng 03 năm 2024 của Bộ trưởng Bộ Giao thông vận tải sửa đổi, bổ sung một số điều của các thông tư liên quan đến lĩnh vực vận tải đường bộ, dịch vụ hỗ trợ vận tải đường bộ, phương tiện và người lái;
+Thông tư số 05/2021/TT-BKHCN ngày 17 tháng 6 năm 2021 của Bộ trưởng Bộ Khoa học và Công nghệ quy định yêu cầu kỹ thuật đối với dữ liệu thông tin đầu vào của cơ sở dữ liệu quốc gia về khoa học và công nghệ;
+Quyết định số 06/2007/QĐ-BNV ngày 18 tháng 6 năm 2007 của Bộ trưởng Bộ Nội vụ về việc ban hành thành phần hồ sơ cán bộ, công chức và mẫu biểu quản lý hồ sơ cán bộ, công chức, trong đó có hướng dẫn việc kê khai trình độ giáo dục phổ thông; Quyết định số 02/2008/QĐ-BNV ngày 06 tháng 10 năm 2008 của Bộ trưởng Bộ Nội vụ về việc ban hành mẫu biểu quản lý hồ sơ cán bộ, công chức;
+Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của luật quản lý thuế và nghị định số 126/2020/NĐ- CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của luật quản lý thuế được sửa đổi, bổ sung bởi: Thông tư số 13/2023/TT-BTC ngày 28 tháng 02 năm 2023 của Bộ Tài chính hướng dẫn thi hành Nghị định số 49/2022/NĐ-CP ngày 29 tháng 7 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 209/2013/NĐ- CP ngày 18 tháng 12 năm 2013 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thuế giá trị gia tăng đã được sửa đổi, bổ sung một số điều theo Nghị định số 12/2015/NĐ-CP, Nghị định số 100/2016/NĐ-CP và Nghị định số 146/2017/NĐ-CP và sửa đổi bổ sung Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính; Thông tư số 43/2023/TT-BTC ngày 27 tháng 6 năm 2023 của Bộ Tài chính sửa đổi, bổ sung một số điều của các Thông tư có quy định liên quan đến việc nộp, xuất trình và khai thông tin về đăng ký sổ hộ khẩu, sổ tạm trú hoặc giấy tờ có yêu cầu xác nhận của địa phương nơi cư trú khi thực hiện các chính sách hoặc thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Tài chính;
+Thông tư số 26/2020/TT-BLĐTBXH ngày 30 tháng 12 năm 2020 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành danh mục nghề, nghề đào tạo cấp IV trình độ trung cấp, trình độ cao đẳng;
+Thông tư số 01/2022/TT-BLĐTBXH ngày 25 tháng 01 năm 2022 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn thu thập, lưu trữ, tổng hợp thông tin thị trường lao động;
+Thông tư số 11/2022/TT-BLĐTBXH ngày 30 tháng 6 năm 2022 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn một số nội dung thực hiện hỗ trợ việc làm bền vững thuộc chương trình mục tiêu quốc gia giảm nghèo bền vững giai đoạn 2021 - 2025;
+Thông tư số 19/2018/TT-BGDĐT ngày 22 tháng 8 năm 2018 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành quy định về kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia đối với trường mầm non được sửa đổi, bổ sung bởi: Thông tư số 22/2024/TT-BGDĐT ngày 10 tháng 12 năm 2024 sửa đổi, bổ sung một số điều của Quy định ban hành kèm theo Thông tư số 17/2018/TT-BGDĐT, Thông tư số 18/2018/TT- BGDĐT và Thông tư số 19/2018/TT-BGDĐT ngày 22 tháng 8 năm 2018 của Bộ trưởng Bộ Giáo dục và Đào tạo; Thông tư số 29/2021/TT-BGDĐT ngày 20 tháng 10 năm 2021 quy định ngưng hiệu lực quy định về chuẩn trình độ đào tạo của nhà giáo tại một số Thông tư do Bộ trưởng Bộ Giáo dục và Đào tạo;
+Thông tư số 22/2021/TT-BGDĐT ngày 20 tháng 7 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạo quy định về đánh giá học sinh trung học cơ sở và học sinh trung học phổ thông;
+Thông tư số 09/2022/TT-BGDĐT ngày 06 tháng 6 năm 2022 của Bộ trưởng Bộ Giáo dục và Đào tạo quy định danh mục thống kê ngành đào tạo của giáo dục đại học;
+Quyết định số 1371/QĐ/LĐTBXH ngày 03 tháng 12 năm 2021 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành Bộ chuẩn trao đổi dữ liệu điện tử lĩnh vực Lao động, người có công và xã hội;
+Quyết định số 745/QĐ-LĐTBXH ngày 11 tháng 6 năm 2024 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành bộ chuẩn trao đổi dữ liệu điện tử lĩnh vực Lao động, Người có công và Xã hội cập nhật, sửa đổi;
+Quyết định số 4998/QĐ-BGDĐT ngày 31 tháng 12 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạo về Ban hành quy định kỹ thuật về dữ liệu của cơ sở dữ liệu giáo dục;
+Quyết định số 3680/QĐ-BHXH ngày 23 tháng 12 năm 2022 của Tổng giám đốc Bảo hiểm xã hội Việt Nam về việc ban hành Quy định kỹ thuật về cấu trúc thông điệp dữ liệu trao đổi với Cơ sở dữ liệu quốc gia về Bảo hiểm;
+Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý thiết bị y tế
+Nghị định số 07/2023/ NĐ-CP ngày 03 tháng 3 năm 2023 của Chính phủ sửa đổi bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý thiết bị y tế
+Nghị định số 4/2025/ NĐ-CP ngày 01 tháng 1 năm 2025 của Chính phủ sửa đổi, bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý thiết bị y tế
+Văn bản hợp nhất của Bộ Y Tế số 12/VBHN-BYT ngày 11 tháng 11 năm 2024 hợp nhất nghị định về quản lý thiết bị y tế 
+Thông tư số 19/2021/TT-BYT ngày 16 tháng 11 năm 2021 của bộ trưởng bộ y tế quy định mẫu văn bản, báo cáo thực hiện nghị định số 98/2021/nđ-cp ngày 08 tháng 11 năm 2021 của chính phủ về quản lý thiết bị y tế, có hiệu lực kể từ ngày 01 tháng 01 năm 2022 được sửa đổi, bổ sung bởi:
+Thông tư số 10/2023/TT-BYT ngày 11 tháng 5 năm 2023 của bộ trưởng bộ y tế sửa đổi, bổ sung một số điều của thông tư số 19/2021/tt-byt ngày 16 tháng 11 năm 2021 của bộ trưởng bộ y tế quy định mẫu văn bản, báo cáo thực hiện nghị định số 98/2021/nđ-cp ngày 08 tháng 11 năm 2021 của chính phủ về quản lý thiết bị y tế, có hiệu lực kể từ ngày 11 tháng 5 năm 2023.
+Văn bản hợp nhất của Bộ Y Tế số 05/VBHN-BYT  Ngày 14/6/2024  Thông tư quy định mẫu văn bản báo cáo thực hiện nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý thiết bị y tế
+Quyết định 3733/ QĐ-BYT- ngày 29 tháng 8 năm 2023 Quy định đặc tả nhóm thông tin cơ bản về nguồn lực y tế phục vụ công tác quản lý của bộ y tế và triển khai đề án 06/CP
+Thông tư số 29/2024/TT-BYT ngày 03 tháng 11 năm 2024  Thông tư quy định đặc điểm kinh tế - kỹ thuật của thiết bị y tế thực hiện kê khai giá.
+Giải thích từ ngữ
+Mô hình dữ liệu (data model)
+Một bản trình diễn kỹ thuật sử dụng các ký hiệu, ngôn ngữ để thể hiện cấu trúc, nội dung của dữ liệu bao gồm các phần tử dữ liệu, thuộc tính, đặc tính, ràng buộc của dữ liệu; mối quan hệ giữa các phần tử dữ liệu.
+Lược đồ dữ liệu (data schema)
+Cách thức mô tả dữ liệu theo mô hình dữ liệu và được thể hiện dưới một ngôn ngữ hình thức trong các hệ thống quản lý cơ sở dữ liệu hoặc mô hình dữ liệu mức vật lý. 
+CHÚ THÍCH: Ngôn ngữ hình thức là một tập các chuỗi ký tự được xây dựng dựa trên một bảng chữ cái, và chúng được ràng buộc bởi các luật hoặc văn phạm đã được định nghĩa từ trước.
+Lược đồ dữ liệu Thiết bị y tế (MedicalDevices data schema)
+Lược đồ mô tả cấu trúc dữ liệu của một thiết bị y tế dụng trong trao đổi dữ liệu và là một thành phần của lược đồ cấu trúc thông điệp dữ liệu thiết bị y tế.
+Lược đồ cấu trúc thông điệp dữ liệu Thiết bị y tế
+Lược đồ dữ liệu mô tả cấu trúc của thông điệp chứa dữ liệu thiết bị y tế được trao đổi giữa hệ thống quản lý Cơ sở dữ liệu quốc gia về thiết bị y tế với các hệ thống khác.
+Mô hình dữ liệu Thiết bị y tế (MedicalDevices data model)
+Mô hình dữ liệu mô tả cấu trúc dữ liệu của thiết bị y tế được mô tả bằng ngôn ngữ mô hình hóa thống nhất UML.
+Lược đồ XML (XSD)
+Lược đồ dữ liệu sử dụng ngôn ngữ đánh dấu mở rộng XML (viết tắt là XSD). Lược đồ XSD sử dụng để các hệ thống thông tin chuyển đổi dữ liệu trong hệ thống từ/sang dữ liệu mã hóa bằng ngôn ngữ XML và sử dụng mô tả mô hình dữ liệu trao đổi giữa các hệ thống thông tin.
+Cấu trúc (Structure viết tắt là S)
+Thể hiện đặc tính của thuộc tính dữ liệu có chứa hai hoặc nhiều hơn hai thuộc tính dữ liệu khác.
+Kiểu (Type viết tắt là T)
+Thể hiện đặc tính của một thuộc tính dữ liệu có kiểu là dữ liệu cơ bản hoặc dữ liệu cơ bản kèm theo các điều kiện ràng buộc về dữ liệu.
+Số lượng (viết tắt là SL)
+Số lượng giá trị của thuộc tính xuất hiện trong một thông điệp dữ liệu theo cấu trúc chứa thuộc tính được định nghĩa theo mô hình dữ liệu, lược đồ dữ liệu tương ứng.	
+CHÚ THÍCH:
+- Số lượng được biểu diễn bởi: n là giá trị của thuộc tính xuất hiện n lần; n..m (với n,m là số tự nhiên) là số lượng giá trị của thuộc tính có thể có lớn hơn hoặc bằng n và nhỏ hơn hoặc bằng m (trong trường hợp m=* có nghĩa là không giới hạn).
+- Trường hợp lựa chọn chỉ một trong hai thuộc tính (được ghi chú trong bảng gắn liền với biểu diễn số lượng) có nghĩa là: nếu giá trị thuộc tính này xuất hiện thì giá trị thuộc tính kia không được xuất hiện.
+Chữ viết tăt
+XML	eXtensible Markup Language		Ngôn ngữ đánh dấu mở rộng
+UML	Unified Modeling Language		Ngôn ngữ mô hình hóa thống nhất
+XSD	XML Schema Definition			Định nghĩa lược đồ XML
+WSDL	Web Services Description Language 	Ngôn ngữ diễn tả dịch vụ web
+CSDLQG						Cơ sở dữ liệu quốc gia
+EHR	Electronic Health Record 			Hồ sơ sức khỏe điện tử
+QUY ĐỊNH KỸ THUẬT
+Quy định chung
+Thông điệp dữ liệu trao đổi về thiết bị y tế: phải mã hóa bằng ngôn ngữ XML; tuân thủ và tham chiếu tường minh đến lược đồ cấu trúc thông điệp dữ liệu thiết bị y tế 
+Lược đồ cấu trúc thông điệp dữ liệu thiết bị y tế: được quy định chi tiết tại mục 2.2; phải được mô tả bằng lược đồ XML và tham chiếu đến lược đồ dữ liệu thiết bị y tế.
+Lược đồ dữ liệu thiết bị y tế: phải được chuyển đổi từ mô hình dữ liệu thiết bị y tế; được mô tả bằng lược đồ XML quy định tại Phụ lục C. Việc chuyển đổi mô hình dữ liệu thiết bị y tế thành lược đồ dữ liệu thiết bị y tế được quy định tại Phụ lục B.
+Mô hình dữ liệu thiết bị y tế mô tả cấu trúc dữ liệu của thiết bị y tế theo quy định tại mục Error! Reference source not found. và Phụ lục A
+Mô hình dữ liệu thiết bị y tế
+Cấu trúc dữ liệu  TBYT(S)
+Mô tả cấu trúc dữ liệu của thiết bị y tế khi trao đổi
+
+Cấu trúc dữ liệu PHANLOAI_TBYT(S)
+Mô tả cấu trúc dữ liệu của PHANLOAI_TBYT(S)
+
+Cấu trúc (S) 
+THOIGIAN (Thời gian)
+ 
+Bảng quy ước định dạng thời gian
+ 
+Kiểu dữ liệu (T) 
+Các kiểu (T) tham chiếu
+
+Bảng quy ước mức độ rủi ro Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý thiết bị y tế
+
+Cấu trúc dữ liệu LUUHANH_TBYT (S)	
+Mô tả cấu trúc dữ liệu
+
+Cấu trúc dữ liệu(S)
+Cấu trúc dữ liệu TOCHUC (S)
+Mô tả cấu trúc dữ liệu
+  
+2.3.3.1.1.1 Cấu trúc dữ liệu THONGTINDIACHI (S)
+Mô tả cấu trúc dữ liệu
+
+2.3.3.1.1.2. Cấu trúc dữ liệu THONGTINLIENHE (S)
+Mô tả cấu trúc dữ liệu
+
+2.3.3.1.1.3. NGUOI_DD (người đại diện)
+Mô tả cấu trúc dữ liệu
+
+Cấu trúc dữ liệu CSKCB (S)
+Mô tả cấu trúc dữ liệu
+Cấu trúc dữ liệu TSKT_TBYT(S)
+Mô tả cấu trúc dữ liệu
+Lược đồ cấu trúc thông điệp dữ liệu TBYT
+Lược đồ cấu trúc thông điệp dữ liệu thiết bị y tế quy định cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử. Định dạng của thông điệp dữ liệu hồ sơ sức khỏe điện tử được trao đổi giữa các hệ thống thông tin được quy định như sau:
+Phần tử gốc: TBYT_THONGDIEP
+
+Lược đồ cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử quy định trong phụ lục C của tài liệu này và chứa phần tử gốc là TBYT_THONGDIEP.
+Phần tử gốc chứa nhiều phần tử dữ liệu TBYT (thiết bị y tế). Số lượng phần tử TBYT phụ thuộc vào mỗi lần thực hiện trao đổi dữ liệu
+PHƯƠNG PHÁP ĐÁNH GIÁ TUÂN THỦ
+Đối với phương thức trao đổi qua dịch vụ web: trích xuất lược đồ dữ liệu trong mô tả dịch vụ bằng ngôn ngữ WSDL được công khai kèm theo dịch vụ web để kiểm tra sự tuân thủ lược đồ dữ liệu.
+Đối với các phương thức trao đổi khác hoặc phương thức trao đổi qua dịch vụ web không thể hiện đầy đủ nội dung thông điệp dữ liệu chứa dữ liệu công dân: sử dụng toàn bộ thông điệp dữ liệu trao đổi để kiểm tra sự tuân thủ: 
+- Thu nhận và kiểm tra sự phù hợp của lược đồ được chỉ định và tham chiếu trong nội dung thông điệp dữ liệu XML qua không gian tên của lược đồ XML.
+- Kiểm tra sự nhất quán và không lỗi đối với tệp dữ liệu XML được thu nhận; kiểm tra sự tuân thủ và tham chiếu tường minh giữa dữ liệu XML và lược đồ XML.
+Nếu lược đồ dữ liệu sử dụng để trao đổi dữ liệu, thông điệp dữ liệu được trao đổi phù hợp với các quy định tại Mục Error! Reference source not found. và các phụ lục bắt buộc của quy chuẩn này thì kết luận là đạt.
+Trường hợp lược đồ cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử được định nghĩa mở rộng để bổ sung các thuộc tính trao đổi không được quy định tại mục 2.3, lược đồ cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử được định nghĩa mở rộng phải tham chiếu (kế thừa) tới lược đồ dữ liệu hồ sơ sức khỏe điện tử và không định nghĩa lại cấu trúc dữ liệu hồ sơ sức khỏe điện tử thì kết luận là đạt.
+
+QUY ĐỊNH QUẢN LÝ
+Cấu trúc thông điệp dữ liệu công dân thuộc phạm vi điều chỉnh quy định tại mục 1.1 phải tuân thủ quy định tại tài liệu quy chuẩn kỹ thuật quốc gia này.
+TỔ CHỨC THỰC HIỆN
+- Cục Khoa học công nghệ và Đào tạo chủ trì, phối hợp với các cơ quan, đơn vị liên quan chỉ đạo, đôn đốc, hướng dẫn, kiểm tra việc thực hiện Thông tư này trên phạm vi toàn quốc.
+- Thủ trưởng đơn vị thuộc, trực thuộc Bộ Y tế, Y tế ngành, Giám đốc Sở Y tế các tỉnh, thành phố trực thuộc trung ương và các cơ quan, tổ chức, cá nhân có liên quan chịu trách nhiệm thi hành Thông tư này.
+Trong quá trình thực hiện nếu có khó khăn, vướng mắc, các cơ quan, tổ chức, cá nhân kịp thời phản ánh về Bộ Y tế (Cục Khoa học công nghệ và Đào tạo) để xem xét, giải quyết kịp thời./.
+
+PHỤ LỤC A
+
+PHỤ LỤC B
+Các quy tắc sau sẽ được sử dụng để chuyển đổi từ mô hình dữ liệu thiết bị y tế sang lược đồ XML của dữ liệu thiết bị y tế.
+Thêm hậu tố Structure vào cuối tên của cấu trúc (S) trong mô hình dữ liệu và định nghĩa dưới dạng ComplexType trong lược đồ XML
+Thêm hậu tố Type vào cuối tên kiểu dữ liệu (T) trong mô hình dữ liệu và định nghĩa dưới dạng kiểu SimpleType trong lược đồ XML
+Đối với kiểu chuỗi ký tự có chứa dấu cách: sử dụng kiểu dữ liệu tiêu chuẩn xsd:string trong lược đồ XML; đối với kiểu chuỗi ký tự không có dấu cách (các mã) sử dụng kiểu dữ liệu tiêu chuẩn xsd:token trong lược đồ XML.
+
+
+PHỤ LỤC C
+LƯỢC ĐÔ CẤU TRÚC THÔNG ĐIỆP DỮ LIỆU THIẾT BỊ Y TẾ
+C.1. Mã nguồn tệp xsd của thông điệp dữ liệu hồ sơ sức khỏe
+Cấu trúc gói trao đổi dữ liệu TBYT.exchange.xsd
+
+Cấu trúc gói tin TBYT.base0.xsd
+
+Cấu trúc gói tin TBYT.EnumType.xsd
+
+Đinh dạng tệp YTE.EnumType.xsd đặc tả danh mục dùng chung trong lĩnh vực y tế
+
+C2. Định dạng dữ liệu XML chứa thông điệp dữ liệu trao đổi về thiết bị y tế
+
+C3. Định dạng dữ liệu JSON chứa thông điệp dữ liệu trao đổi về thiết bị y tế  
+
+
+PHỤ LỤC D
+CÁC DANH MỤC THAM CHIẾU
+D.1. DANH MỤC LOẠI TBYT
+
+D.2. DANH MỤC MÃ HS TBYT
+MÃ SỐ HÀNG HÓA THIẾT BỊ Y TẾ XUẤT KHẨU, NHẬP KHẨU ĐÃ ĐƯỢC XÁC ĐỊNH THEO DANH MỤC HÀNG HÓA XUẤT KHẨU, NHẬP KHẨU
+Thông tư số 19/2024/TT-BYT ngày 01 tháng 10 năm 2024 của Bộ trưởng Bộ Y tế
+ 
+
+D.3. Danh mục Quốc Gia
+Tham chiếu theo QCVN 109:2017/BTTTT
+
+D.4. Dữ liệu danh mục mã bệnh (ICD10)
+Quyết định số 4469/QĐ-BYT ngày 28 tháng 10 năm 2020 và các văn bản cập nhật, bổ sung
+
+D.5. Dữ liệu danh mục mã bệnh y học cổ truyền
+Quyết định số 7603/QĐ-BYT ngày 25 tháng 12 năm 2018 và các văn bản sửa đổi, bổ sung
+
+D.6. Danh mục mã loại hình khám bệnh, chữa bệnh
+Ban hành kèm theo Quyết định số 824/QĐ-BYT ngày 15 tháng 02 năm 2023 của Bộ trưởng Bộ Y tế

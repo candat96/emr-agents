@@ -1,0 +1,776 @@
+QCVN 01:2025/BYT
+QUY CHUẨN KỸ THUẬT QUỐC GIA VỀ CẤU TRÚC THÔNG ĐIỆP DỮ LIỆU TRAO ĐỔI VỚI CƠ SỞ DỮ LIỆU TỔNG HỢP QUỐC GIA VỀ BỆNH ÁN ĐIỆN TỬ (EMR)
+
+
+LỜI NÓI ĐẦU
+QCVN 01:2025/BYT do Cục Khoa học Công nghệ và Đào tạo, Bộ Y tế chủ trì, phối hợp với Hội Tin học Y tế, Ban Dữ liệu Hiệp Hội Dữ liệu quốc gia biên soạn, Bộ Khoa học và Công nghệ thẩm định, Bộ trưởng Bộ Y tế ban hành kèm theo Thông tư số 0    /2025/TT-BYT  ngày 01 tháng 9 năm 2025.
+1. QUY ĐỊNH CHUNG
+1.1 Phạm vi điều chỉnh
+Quy chuẩn kỹ thuật quốc gia về cấu trúc thông điệp dữ liệu trao đổi với Cơ sở dữ liệu quốc gia về y tế quy định các yêu cầu kỹ thuật về cấu trúc thông điệp dữ liệu trao đổi giữa cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành Y tế, hệ thống thông tin có kết nối, trao đổi dữ liệu với cơ sở dữ liệu tổng hợp quốc gia, cơ sở dữ liệu chuyên ngành Y tế.
+Quy chuẩn kỹ thuật này không bao gồm: các nội dung thông tin mở rộng bổ sung trong quá trình trao đổi các thông điệp dữ liệu (các tham số ngữ cảnh, dữ liệu kiểm soát truyền tin, giao thức) được sử dụng để đóng gói thông điệp dữ liệu chính cần trao đổi; dữ liệu thống kê phát sinh.
+1.2 Đối tượng áp dụng
+Quy chuẩn kỹ thuật quốc gia này áp dụng đối với:
+1.2.1. Trung tâm dữ liệu quốc gia.
+1.2.2. Trung tâm dữ liệu Y tế quốc gia.
+1.2.3. Cơ quan, tổ chức, cá nhân có cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành Y tế, hệ thống thông tin có kết nối, trao đổi dữ liệu với Cơ sở dữ liệu tổng hợp quốc gia, cơ sở dữ liệu chuyên ngành Y tế theo quy định của pháp luật.
+1.2.4. Các cơ quan, tổ chức, cá nhân có liên quan đến hoạt động kết nối, chia sẻ, trao đổi dữ liệu với Cơ sở dữ liệu tổng hợp quốc gia.
+1.3 Tài liệu viện dẫn
+Căn cứ Luật Tiêu chuẩn và Quy chuẩn kỹ thuật số 68/2006/QH11 ngày 29 tháng 06 năm 2006;
+Căn cứ Luật Công nghệ thông tin số 67/2006/QH11 ngày 29 tháng 6 năm 2006;
+Căn cứ Luật Dữ liệu số 60/2024/QH15 ngày 30 tháng 11 năm 2024;
+Căn cứ Luật Giao dịch điện tử số 20/2023/QH15 ngày 22 tháng 6 năm 2023;
+Căn cứ Luật Tiếp cận thông tin số 104/2016/QH13 ngày 06 tháng 4 năm 2016;
+Căn cứ Luật An ninh mạng số 24/2018/QH14 ngày 12 tháng 6 năm 2018;
+Căn cứ Luật An toàn thông tin mạng số 86/2015/QH13 ngày 19 tháng 11 năm 2015;
+Căn cứ Luật sửa đổi, bổ sung một số điều của 37 Luật có liên quan đến quy hoạch số 35/2018/QH14 ngày 20 tháng 11 năm 2018;
+Căn cứ Luật Khám bệnh, chữa bệnh số 15/2023/QH15 ngày 09 tháng 01 năm 2023;
+Căn cứ Luật Dược số 105/2016/QH13 ngày 06 tháng 4 năm 2016; Luật sửa đổi, bổ sung một số điều của Luật dược số 44/2024/QH15 ngày 21 tháng 11 năm 2024; 
+Căn cứ Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam số 47/2014/QH13 ngày 16 tháng 6 năm 2014 của Quốc hội, được sửa đổi, bổ sung bởi: Luật số 51/2019/QH14 ngày 25 tháng 11 năm 2019 của Quốc hội sửa đổi, bổ sung một số điều của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam; Luật số 23/2023/QH15 ngày 24 tháng 6 năm 2023 của Quốc hội sửa đổi, bổ sung một số điều của Luật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam;
+Căn cứ Luật thi đua, khen thưởng số 06/2022/QH15 ngày 15 tháng 6 năm 2022;
+Luật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội; được sửa đổi bổ sung bởi: Luật số 36/2009/QH12 ngày 19 tháng 6 năm 2009 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ; Luật số 42/2019/QH14 ngày 14 tháng 6 năm 2019 của Quốc hội sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm, Luật Sở hữu trí tuệ; Luật số 07/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ;
+Căn cứ Luật Xử lý vi phạm hành chính số 15/2012/QH13 ngày 20 tháng 6 năm 2012 của Quốc hội, được sửa đổi, bổ sung bởi: Luật Hải quan số 54/2014/QH13 ngày 23 tháng 6 năm 2014 của Quốc hội; Luật Thủy sản số 18/2017/QH14 ngày 21 tháng 11 năm 2017 của Quốc hội; Luật số 67/2020/QH14 ngày 13 tháng 11 năm 2020 của Quốc hội sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính; Luật số 09/2022/QH15 ngày 09 tháng 11 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Tần số vô tuyến điện; Luật Thanh tra số 11/2022/QH15 ngày 14 tháng 11 năm 2022 của Quốc hội;
+Căn cứ Bộ luật Hình sự số 100/2015/QH13 ngày 27 tháng 11 năm 2015 của Quốc hội, được sửa đổi bổ sung bởi: Luật số 12/2017/QH14 ngày 20 tháng 6 năm 2017 của Quốc hội sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13;
+Căn cứ Luật trợ giúp pháp lý số 11/2017/QH14 ngày 20 tháng 6 năm 2017;
+Căn cứ Luật Quản lý thuế số 38/2019/QH14 ngày 13 tháng 6 năm 2019;
+Căn cứ Luật Đầu tư số 61/2020/QH14 ngày 17 tháng 6 năm 2020 của Quốc hội, được sửa đổi, bổ sung bởi: Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17 tháng 11 năm 2020 của Quốc hội; Luật số 03/2022/QH15 ngày 11 tháng 01 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Đầu tư công, Luật Đầu tư theo phương thức đối tác công tư, Luật Đầu tư, Luật Nhà ở, Luật Đấu thầu, Luật Điện lực, Luật Doanh nghiệp, Luật Thuế tiêu thụ đặc biệt và Luật Thi hành án dân sự, có hiệu lực kể từ ngày 01 tháng 3 năm 2022;
+Căn cứ Luật Khoa học và công nghệ số 29/2013/QH13 ngày 18 tháng 6 năm 2013 của Quốc hội, được sửa đổi, bổ sung bởi: Luật số 28/2018/QH14 ngày 15 tháng 6 năm 2018 của Quốc hội sửa đổi, bổ sung một số điều của 11 luật có liên quan đến quy hoạch; Luật số 07/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ;
+Căn cứ Nghị định số 127/2007/NĐ-CP ngày 01 tháng 8 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Tiêu chuẩn và quy chuẩn kỹ thuật;
+Căn cứ Nghị định số 78/2018/NĐ-CP ngày 16 tháng 5 năm 2018 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 127/2007/NĐ-CP ngày 01 tháng 8 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Tiêu chuẩn và quy chuẩn kỹ thuật;
+Căn cứ Nghị định số 102/2025/NĐ-CP ngày 13 tháng 5 năm 2025 của Chính phủ quy định quản lý dữ liệu y tế;
+Căn cứ Nghị định số 165/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ quy định chi tiết và biện pháp thi hành Luật Dữ liệu;
+Căn cứ Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý trang thiết bị y tế; Nghị định số 07/2023/NĐ-CP ngày 03 tháng 3 năm 2023 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 98/2021/NĐ-CP ngày 08 tháng 11 năm 2021 của Chính phủ về quản lý trang thiết bị y tế;
+Căn cứ Nghị định số 42/2025/NĐ-CP ngày 27 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế;
+Căn cứ Thông tư số 53/2014/TT-BYT ngày 29 tháng 12 năm 2014  của Bộ Y tế quy định điều kiện hoạt động y tế trên môi trường mạng;
+Căn cứ Thông tư số 49/2017/TT-BYT ngày 28 tháng 12 năm 2017 của Bộ Y tế quy định về hoạt động y tế từ xa;
+Căn cứ Thông tư số 54/2017/TT-BYT ngày 29 tháng 12 năm 2017 của Bộ Y tế Ban hành Bộ tiêu chí ứng dụng CNTT tại các cơ sở khám bệnh, chữa bệnh;
+Căn cứ Thông tư số 13/2025/TT-BYT ngày 6 tháng 6 năm 2025 của Bộ Y tế hướng dẫn triển khai hồ sơ bệnh án điện tử;
+Căn cứ Thông tư số 48/2017/TT-BYT ngày 28 tháng 12 năm 2017 của Bộ Y tế quy định trích chuyển dữ liệu điện tử trong quản lý và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Căn cứ Thông tư số 26/2025/TT-BYT ngày 30 tháng 6 năm 2025 của Bộ Y tế quy định về đơn thuốc và việc kê đơn thuốc hóa dược, sinh phẩm trong điều trị ngoại trú tại cơ sở khám bệnh, chữa bệnh;
+Căn cứ Thông tư số 30/2023/TT-BYT ngày 30 tháng 12 năm 2023 của Bộ Y tế quy định danh mục bệnh, tình trạng bệnh được khám bệnh, chữa bệnh từ xa ;
+Căn cứ Quyết định số 831/QĐ-BYT ngày 11 tháng 3 năm 2017 của Bộ Y tế về việc ban hành Mẫu hồ sơ quản lý sức khỏe cá nhân phục vụ chăm sóc sức khỏe ban đầu;
+Căn cứ Quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 của Bộ Y tế Quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế và giải quyết các chế độ liên quan; 
+Căn cứ Quyết định số 3176/QĐ-BYT ngày 29 tháng 10 năm 2024 của Bộ Y tế sửa đổi, bổ sung quyết định số 4750/QĐ-BYT ngày 29 tháng 12 năm 2023 của bộ trưởng bộ y tế sửa đổi, bổ sung quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định, thanh toán chi phí khám bệnh, chữa bệnh và giải quyết các chế độ liên quan;
+Căn cứ Quyết định số 4750/QĐ-BYT ngày 29 tháng 12 năm 2023 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung quyết định số 130/QĐ-BYT ngày 18 tháng 01 năm 2023 quy định chuẩn và định dạng dữ liệu đầu ra phục vụ việc quản lý, giám định, thanh toán chi phí khám bệnh, chữa bệnh và giải quyết các chế độ liên quan; 
+Căn cứ Quyết định số 1928/QĐ-BYT ngày 21 tháng 4 năm 2023 của Bộ trưởng Bộ Y tế ban hành Kiến trúc Chính phủ điện tử của Bộ Y tế phiên bản 2.1 (Quyết định 1928/QĐ-BYT);
+Căn cứ Quyết định số 28/QĐ-BYT ngày 05 tháng 1 năm 2021 của Bộ trưởng Bộ Y tế Ban hành Bộ tiêu chí Công nghệ thông tin để thực hiện hoạt động y tế từ xa;
+Căn cứ Quyết định số 3074/QĐ-TTg ngày 11 tháng 11 năm 2022 của Bộ trưởng Bộ Y tế về việc quy định nhóm thông tin cơ bản về y tế thuộc cơ sở dữ liệu quốc gia về bảo hiểm;
+Căn cứ Quyết định số 1332/QĐ-BYT ngày 21 tháng 5 năm 2024 của Bộ trưởng Bộ Y tế về ban hành Sổ sức khỏe điện tử phục vụ tích hợp trên ứng dụng VNeID;
+Căn cứ Quyết định số 2733/QĐ-BYT ngày 17 tháng 9 năm 2024 của Bộ Y tế về hướng dẫn thí điểm thực hiện Sổ sức khỏe điện tử phục vụ tích hợp trên ứng dụng VNeID (gọi tắt là Sổ sức khỏe điện tử VNeID). 
+Quyết định số 384/QĐ-BYT ngày 01 tháng 02 năm 2019 của Bộ trưởng Bộ Y tế ban hành nguyên tắc cấp mã cơ sở khám bệnh, chữa bệnh;
+Quyết định số 1921/QĐ-BYT ngày 12 tháng 7 năm 2022 của Bộ trưởng Bộ Y tế ban hành hướng dẫn ghi phiếu chẩn đoán nguyên nhân tử vong tại các cơ sở khám chữa bệnh;
+Quyết định số 7603/QĐ-BYT ngày 25 tháng 12 năm 2018 của Bộ trưởng Bộ Y tế về việc ban hành bộ mã danh mục dùng chung áp dụng trong quản lý khám bệnh, chữa bệnh và thanh toán bảo hiểm y tế (phiên bản số 6);
+Quyết định số 4400/QĐ-BYT của Bộ trưởng Bộ Y tế ngày 23 tháng 10 năm 2020 về việc ban hành “bảng phân loại quốc tế mã hóa bệnh tật, nguyên nhân tử vong icd-10” và “hướng dẫn mã hóa bệnh tật theo icd-10” tại các cơ sở khám bệnh, chữa bệnh”
+Quyết định số 4469/QĐ-BYT ngày 28 tháng 10 năm 2020 của Bộ trưởng Bộ Y tế về việc ban hành "Bảng phân loại quốc tế mã hoá bệnh tật, nguyên nhân tử vong icd-10" và "Hướng dẫn mã hoá bệnh tật theo ICD-10" tại các cơ sở khám bệnh, chữa bệnh" được sửa đổi, bổ sung bởi: Quyết định số 98/QĐ-BYT ngày 14/01/2022 về việc ban hành danh mục bổ sung một số mã ICD-10 liên quan đến covid-19 theo hướng dẫn của tổ chức y tế thế giới.
+Quyết định số 5937/QĐ-BYT ngày 30 tháng 12 năm 2021 của Bộ trưởng Bộ Y tế ban hành bổ sung các danh mục mã dùng chung áp dụng trong quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Quyết định số 824/QĐ-BYT ngày 15 tháng 02 năm 2023 của Bộ trưởng Bộ Y tế ban hành bổ sung các danh mục mã dùng chung áp dụng trong quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế;
+Nghị định số 47/2020/NĐ-CP ngày 09 tháng 4 năm 2020 của Chính phủ về quản lý, kết nối và chia sẻ dữ liệu số của cơ quan nhà nước;
+Nghị định số 42/2022/NĐ-CP ngày 24 tháng 6 năm 2022 của Chính phủ quy định về việc cung cấp thông tin và dịch vụ công trực tuyến của cơ quan nhà nước trên môi trường mạng;
+Nghị định số 47/2024/NĐ-CP ngày 09 tháng 5 năm 2024 của Chính phủ quy định về danh mục cơ sở dữ liệu quốc gia; việc xây dựng, cập nhật, duy trì, khai thác và sử dụng cơ sở dữ liệu quốc gia
+Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang, được sửa đổi, bổ sung bởi: Nghị định số 76/2009/NĐ-CP ngày 15 tháng 9 năm 2009 của Chính phủ về sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang; Nghị định số 14/2012/NĐ-CP ngày 07 tháng 3 năm 2012 của Chính phủ về sửa đổi Điều 7 Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang và Mục I Bảng phụ cấp chức vụ lãnh đạo (bầu cử, bổ nhiệm) trong các cơ quan nhà nước, đơn vị sự nghiệp của Nhà nước; cơ quan, đơn vị thuộc Quân đội nhân dân và Công an nhân dân ban hành kèm theo Nghị định số 204/2004/NĐ-CP; Nghị định số 17/2013/NĐ- CP ngày 19 tháng 02 năm 2013 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang; Nghị định số 117/2016/NĐ-CP ngày 21 tháng 7 năm 2016 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 204/2004/NĐ-CP ngày 14 tháng 12 năm 2004 của Chính phủ về chế độ tiền lương đối với cán bộ, công chức, viên chức và lực lượng vũ trang;
+Nghị định số 90/2020/NĐ-CP ngày 13 tháng 8 năm 2020 của Chính phủ về đánh giá, xếp loại chất lượng cán bộ, công chức, viên chức;
+Nghị định số 112/2020/NĐ-CP ngày 18 tháng 9 năm 2020 của Chính phủ về xử lý kỷ luật cán bộ công chức viên chức; được sửa đổi, bổ sung bởi Nghị định số 71/2023/NĐ- CP ngày 20 tháng 9 năm 2023 của Chính phủ;
+Nghị định số 103/2017/NĐ-CP ngày 12 tháng 9 năm 2017 của Chính phủ quy định về thành lập, tổ chức, hoạt động, giải thể và quản lý các cơ sở trợ giúp xã hội; được sửa đổi, bổ sung bởi Nghị định số 140/2018/NĐ-CP ngày 08 tháng 10 năm 2018 của Chính phủ;
+Quyết định số 142/QĐ-TTg ngày 02 tháng 02 năm 2024 của Thủ tướng Chính phủ phê duyệt Chiến lược dữ liệu quốc gia đến năm 2030;
+Quyết định số 124/2004/QĐ-TTg ngày 08 tháng 7 năm 2004 của Thủ tướng Chính phủ về việc ban hành Bảng danh mục và mã số các đơn vị hành chính Việt Nam;
+Quyết định số 27/2018/QĐ-TTg ngày 06 tháng 7 năm 2018 của Thủ tướng Chính phủ ban hành hệ thống ngành kinh tế Việt Nam;
+Quyết định số 34/2020/QĐ-TTg ngày 26 tháng 11 năm 2020 của Thủ tướng Chính phủ ban hành Danh mục nghề nghiệp Việt Nam;
+Thông tư số 13/2017/TT-BTTTT ngày 23 tháng 6 năm 2017 của Bộ trưởng Bộ Thông tin và Truyền thông quy định các yêu cầu kỹ thuật về kết nối các hệ thống thông tin, cơ sở dữ liệu với cơ sở dữ liệu quốc gia;
+Thông tư số 02/2017/TT-BTTTT ngày 04 tháng 4 năm 2017 của Bộ trưởng Bộ Thông tin và Truyền thông ban hành "Quy chuẩn kỹ thuật quốc gia về cấu trúc thông điệp dữ liệu công dân trao đổi với cơ sở dữ liệu Quốc gia về dân cư" (QCVN 109:2017/BTTTT);
+Thông tư số 08/2023/TT-BTNMT ngày 31 tháng 7 năm 2023 của Bộ trưởng Bộ Tài nguyên và Môi trường ban hành Quy chuẩn kỹ thuật quốc gia về cơ sở dữ liệu nền địa lý quốc gia tỷ lệ 1:2.000, 1:5.000, 1:10.000 (QCVN 73:2023/BTNMT);
+Thông tư số 09/2024/TT-BTNMT ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định về nội dung, cấu trúc, kiểu thông tin cơ sở dữ liệu quốc gia về đất đai và yêu cầu kỹ thuật đối với phần mềm ứng dụng của Hệ thống thông tin quốc gia về đất đai;
+Thông tư số 12/2017/TT-BGTVT ngày 15 tháng 4 năm 2017 của Bộ trưởng Bộ Giao thông vận tải quy định về đào tạo, sát hạch, cấp giấy phép lái xe cơ giới đường bộ; được sửa đổi, bổ sung bởi: Thông tư số 05/2024/TT-BGTVT ngày 31 tháng 03 năm 2024 của Bộ trưởng Bộ Giao thông vận tải sửa đổi, bổ sung một số điều của các thông tư liên quan đến lĩnh vực vận tải đường bộ, dịch vụ hỗ trợ vận tải đường bộ, phương tiện và người lái;
+Thông tư số 05/2021/TT-BKHCN ngày 17 tháng 6 năm 2021 của Bộ trưởng Bộ Khoa học và Công nghệ quy định yêu cầu kỹ thuật đối với dữ liệu thông tin đầu vào của cơ sở dữ liệu quốc gia về khoa học và công nghệ;
+Quyết định số 06/2007/QĐ-BNV ngày 18 tháng 6 năm 2007 của Bộ trưởng Bộ Nội vụ về việc ban hành thành phần hồ sơ cán bộ, công chức và mẫu biểu quản lý hồ sơ cán bộ, công chức, trong đó có hướng dẫn việc kê khai trình độ giáo dục phổ thông; Quyết định số 02/2008/QĐ-BNV ngày 06 tháng 10 năm 2008 của Bộ trưởng Bộ Nội vụ về việc ban hành mẫu biểu quản lý hồ sơ cán bộ, công chức;
+Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ trưởng Bộ Tài chính hướng dẫn thi hành một số điều của luật quản lý thuế và nghị định số 126/2020/NĐ- CP ngày 19 tháng 10 năm 2020 của Chính phủ quy định chi tiết một số điều của luật quản lý thuế được sửa đổi, bổ sung bởi: Thông tư số 13/2023/TT-BTC ngày 28 tháng 02 năm 2023 của Bộ Tài chính hướng dẫn thi hành Nghị định số 49/2022/NĐ-CP ngày 29 tháng 7 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 209/2013/NĐ- CP ngày 18 tháng 12 năm 2013 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thuế giá trị gia tăng đã được sửa đổi, bổ sung một số điều theo Nghị định số 12/2015/NĐ-CP, Nghị định số 100/2016/NĐ-CP và Nghị định số 146/2017/NĐ-CP và sửa đổi bổ sung Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ Tài chính; Thông tư số 43/2023/TT-BTC ngày 27 tháng 6 năm 2023 của Bộ Tài chính sửa đổi, bổ sung một số điều của các Thông tư có quy định liên quan đến việc nộp, xuất trình và khai thông tin về đăng ký sổ hộ khẩu, sổ tạm trú hoặc giấy tờ có yêu cầu xác nhận của địa phương nơi cư trú khi thực hiện các chính sách hoặc thủ tục hành chính thuộc lĩnh vực quản lý nhà nước của Bộ Tài chính;
+Thông tư số 26/2020/TT-BLĐTBXH ngày 30 tháng 12 năm 2020 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành danh mục nghề, nghề đào tạo cấp IV trình độ trung cấp, trình độ cao đẳng;
+Thông tư số 01/2022/TT-BLĐTBXH ngày 25 tháng 01 năm 2022 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn thu thập, lưu trữ, tổng hợp thông tin thị trường lao động;
+Thông tư số 11/2022/TT-BLĐTBXH ngày 30 tháng 6 năm 2022 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn một số nội dung thực hiện hỗ trợ việc làm bền vững thuộc chương trình mục tiêu quốc gia giảm nghèo bền vững giai đoạn 2021 - 2025;
+Thông tư số 19/2018/TT-BGDĐT ngày 22 tháng 8 năm 2018 của Bộ trưởng Bộ Giáo dục và Đào tạo ban hành quy định về kiểm định chất lượng giáo dục và công nhận đạt chuẩn quốc gia đối với trường mầm non được sửa đổi, bổ sung bởi: Thông tư số 22/2024/TT-BGDĐT ngày 10 tháng 12 năm 2024 sửa đổi, bổ sung một số điều của Quy định ban hành kèm theo Thông tư số 17/2018/TT-BGDĐT, Thông tư số 18/2018/TT- BGDĐT và Thông tư số 19/2018/TT-BGDĐT ngày 22 tháng 8 năm 2018 của Bộ trưởng Bộ Giáo dục và Đào tạo; Thông tư số 29/2021/TT-BGDĐT ngày 20 tháng 10 năm 2021 quy định ngưng hiệu lực quy định về chuẩn trình độ đào tạo của nhà giáo tại một số Thông tư do Bộ trưởng Bộ Giáo dục và Đào tạo;
+Thông tư số 22/2021/TT-BGDĐT ngày 20 tháng 7 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạo quy định về đánh giá học sinh trung học cơ sở và học sinh trung học phổ thông;
+Thông tư số 09/2022/TT-BGDĐT ngày 06 tháng 6 năm 2022 của Bộ trưởng Bộ Giáo dục và Đào tạo quy định danh mục thống kê ngành đào tạo của giáo dục đại học;
+Quyết định số 1371/QĐ/LĐTBXH ngày 03 tháng 12 năm 2021 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành Bộ chuẩn trao đổi dữ liệu điện tử lĩnh vực Lao động, người có công và xã hội;
+Quyết định số 745/QĐ-LĐTBXH ngày 11 tháng 6 năm 2024 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành bộ chuẩn trao đổi dữ liệu điện tử lĩnh vực Lao động, Người có công và Xã hội cập nhật, sửa đổi;
+Quyết định số 4998/QĐ-BGDĐT ngày 31 tháng 12 năm 2021 của Bộ trưởng Bộ Giáo dục và Đào tạo về Ban hành quy định kỹ thuật về dữ liệu của cơ sở dữ liệu giáo dục;
+Quyết định số 3680/QĐ-BHXH ngày 23 tháng 12 năm 2022 của Tổng giám đốc Bảo hiểm xã hội Việt Nam về việc ban hành Quy định kỹ thuật về cấu trúc thông điệp dữ liệu trao đổi với Cơ sở dữ liệu quốc gia về Bảo hiểm;
+Quyết định số 2475/QĐ-BTTTT ngày 29 tháng 12 năm 2017 của Bộ trưởng Bộ Thông tin và Truyền thông ban hành mã bưu chính quốc gia; được sửa đổi, bổ sung theo Quyết định số 1820/QĐ-BTTTT ngày 08 tháng 11 năm 2018 của Bộ trưởng Bộ Thông tin và Truyền thông, Quyết định số 153/QĐ-BTTTT và Quyết định số 155/QĐ-BTTTT ngày 05 tháng 2 năm 2021 của Bộ trưởng Bộ Thông tin và Truyền thông.
+1.4 Giải thích từ ngữ
+1.4.1 Mô hình dữ liệu (data model)
+Một bản trình diễn kỹ thuật sử dụng các ký hiệu, ngôn ngữ để thể hiện cấu trúc, nội dung của dữ liệu bao gồm các phần tử dữ liệu, thuộc tính, đặc tính, ràng buộc của dữ liệu; mối quan hệ giữa các phần tử dữ liệu.
+1.4.2 Lược đồ dữ liệu (data schema)
+Cách thức mô tả dữ liệu theo mô hình dữ liệu và được thể hiện dưới một ngôn ngữ hình thức trong các hệ thống quản lý cơ sở dữ liệu hoặc mô hình dữ liệu mức vật lý. 
+CHÚ THÍCH: Ngôn ngữ hình thức là một tập các chuỗi ký tự được xây dựng dựa trên một bảng chữ cái, và chúng được ràng buộc bởi các luật hoặc văn phạm đã được định nghĩa từ trước.
+1.4.3 Lược đồ dữ liệu hồ sơ bệnh án điện tử (EMR data schema)
+Lược đồ mô tả cấu trúc dữ liệu của những hố sơ sức khỏe điện tử sử dụng trong trao đổi dữ liệu và là một thành phần của lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử.
+1.4.4 Lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử
+Lược đồ dữ liệu mô tả cấu trúc của thông điệp chứa dữ liệu hồ sơ bệnh án điện tử được trao đổi giữa hệ thống quản lý Cơ sở dữ liệu quốc gia về hồ sơ bệnh án điện tử với các hệ thống khác.
+1.4.5 Mô hình dữ liệu hồ sơ bệnh án điện tử (EMR data model)
+Mô hình dữ liệu mô tả cấu trúc dữ liệu của hồ sơ bệnh án điện tử được mô tả bằng ngôn ngữ mô hình hóa thống nhất UML.
+1.4.6 Lược đồ XML (XSD)
+Lược đồ dữ liệu sử dụng ngôn ngữ đánh dấu mở rộng XML (viết tắt là XSD). Lược đồ XSD sử dụng để các hệ thống thông tin chuyển đổi dữ liệu trong hệ thống từ/sang dữ liệu mã hóa bằng ngôn ngữ XML và sử dụng mô tả mô hình dữ liệu trao đổi giữa các hệ thống thông tin.
+1.4.7 Cấu trúc (Structure viết tắt là S)
+Thể hiện đặc tính của thuộc tính dữ liệu có chứa hai hoặc nhiều hơn hai thuộc tính dữ liệu khác.
+1.4.8 Kiểu (Type viết tắt là T)
+Thể hiện đặc tính của một thuộc tính dữ liệu có kiểu là dữ liệu cơ bản hoặc dữ liệu cơ bản kèm theo các điều kiện ràng buộc về dữ liệu.
+1.4.9 Chuỗi mã hóa (CHUỖI MÃ HÓA)
+Quy định cho các định dạng dữ liệu kiểu tài liệu, hình ảnh, chữ ký số, chữ ký điện tử được mã hóa của các trường thông tin. Mô tả phương pháp mã hóa dữ liệu tại phụ lục B.
+1.4.10 Số lượng (viết tắt là SL)
+Số lượng giá trị của thuộc tính xuất hiện trong một thông điệp dữ liệu theo cấu trúc chứa thuộc tính được định nghĩa theo mô hình dữ liệu, lược đồ dữ liệu tương ứng.
+CHÚ THÍCH:
+- Số lượng được biểu diễn bởi: n là giá trị của thuộc tính xuất hiện n lần; n..m (với n,m là số tự nhiên) là số lượng giá trị của thuộc tính có thể có lớn hơn hoặc bằng n và nhỏ hơn hoặc bằng m (trong trường hợp =* có nghĩa là không giới hạn).
+- Trường hợp lựa chọn chỉ một trong hai thuộc tính (được ghi chú trong bảng gắn liền với biểu diễn số lượng) có nghĩa là: nếu giá trị thuộc tính này xuất hiện thì giá trị thuộc tính kia không được xuất hiện.
+1.5 Chữ viết tắt
+XML	eXtensible Markup Language		Ngôn ngữ đánh dấu mở rộng
+UML	Unified Modeling Language		Ngôn ngữ mô hình hóa thống nhất
+XSD	XML Schema Definition			Định nghĩa lược đồ XML
+WSDL	Web Services Description Language 	Ngôn ngữ diễn tả dịch vụ web
+CSDLQG						Cơ sở dữ liệu quốc gia
+EMR	Electronic Medical Record 			Hồ sơ Bệnh án điện tử
+
+2. Quy định Kỹ thuật 
+2.1 Quy đinh chung
+2.1.1 Thông điệp dữ liệu trao đổi về hồ sơ bệnh án điện tử: phải mã hóa bằng ngôn ngữ XML; tuân thủ và tham chiếu tường minh đến lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử
+2.1.2 Lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử: được quy định chi tiết tại mục 2.2; phải được mô tả bằng lược đồ XML và tham chiếu đến lược đồ dữ liệu hồ sơ bệnh án điện tử.
+2.1.3 Lược đồ dữ liệu hồ sơ bệnh án: phải được chuyển đổi từ mô hình dữ liệu hồ sơ bệnh án điện tử; được mô tả bằng lược đồ XML và lược đồ JSON quy định tại Phụ lục C. Việc chuyển đổi mô hình dữ liệu công dân thành lược đồ dữ liệu công dân được quy định tại Phụ lục B. Cấu trúc JSON được mô tả tương đương như ngôn ngữ XML.
+2.1.4 Mô hình dữ liệu hồ sơ bệnh án điện tử mô tả cấu trúc dữ liệu của công dân theo quy định tại mục 2.2 và Phụ lục A
+
+2.2 Mô hình Dữ liệu Hồ sơ Bệnh án điện tử 
+2.2.1 BA-01. Bệnh án nội khoa
+Mô hình dữ liệu hồ sơ bệnh án nội khoa BA-01 Bệnh án nội khoa được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án nội khoa (BA-01)
+2.2.2 BA-02. Bệnh án ngoại khoa
+Mô hình dữ liệu hồ sơ bệnh án ngoại khoa BA-02 Bệnh án ngoại khoa được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ngoại khoa (BA-02)
+2.2.3 BA-03. Bệnh án sản khoa
+Mô hình dữ liệu hồ sơ bệnh án sản khoa BA-03 Bệnh án sản khoa được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án sản khoa (BA-03)
+2.2.4 BA-04. Bệnh án nhi khoa
+Mô hình dữ liệu hồ sơ bệnh án nhi khoa BA-04 Bệnh án nhi khoa được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án nhi khoa (BA-04)
+2.2.5 BA-05. Bệnh án sơ sinh
+Mô hình dữ liệu hồ sơ bệnh án sơ sinh BA-05 Bệnh án sơ sinh được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án sơ sinh (BA-05)
+2.2.6 BA-06. Bệnh án phụ khoa
+Mô hình dữ liệu hồ sơ bệnh án phụ khoa BA-06 Bệnh án phụ khoa được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án phụ khoa (BA-06)
+2.2.7 BA-07. Bệnh án bỏng
+Mô hình dữ liệu hồ sơ bệnh án bỏng BA-07 Bệnh án bỏng được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án bỏng (BA-07)
+2.2.8 BA-08. Bệnh án ung bướu
+Mô hình dữ liệu hồ sơ bệnh án ung bướu BA-08 Bệnh án ung bướu được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ung bướu (BA-08)
+2.2.9 BA-09. Bệnh án tâm thần
+Mô hình dữ liệu hồ sơ bệnh án tâm thần BA-09 Bệnh án tâm thần được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án tâm thần (BA-09)
+2.2.10 BA-10. Bệnh án da liễu
+Mô hình dữ liệu hồ sơ bệnh án da liễu BA-10 Bệnh án da liễu được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án da liễu (BA-10)
+2.2.11 BA-11. Bệnh án mắt
+Mô hình dữ liệu hồ sơ bệnh án mắt BA-11 Bệnh án mắt được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (BA-11)
+2.2.12 BA-12. Bệnh án răng hàm mặt
+Mô hình dữ liệu hồ sơ bệnh án răng hàm mặt BA-12 Bệnh án răng hàm mặt được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án răng hàm mặt (BA-12)
+2.2.13 BA-13. Bệnh án tai mũi họng
+Mô hình dữ liệu hồ sơ bệnh án tai mũi họng BA-13 Bệnh án tai mũi họng được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án tai mũi họng (BA-13)
+2.2.14 BA-14. Bệnh án phục hồi chức năng
+Mô hình dữ liệu hồ sơ bệnh án phục hồi chức năng BA-14 Bệnh án phục hồi chức năng được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án phục hồi chức năng (BA-14)
+2.2.15 BA-15. Bệnh án phục hồi chức năng chuyên khoa nhi
+Mô hình dữ liệu hồ sơ bệnh án phục hồi chức năng chuyên khoa nhi BA-15 Bệnh án phục hồi chức năng chuyên khoa nhi được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án phục hồi chức năng chuyên khoa nhi (BA-15)
+2.2.16 BA-16. Bệnh án ngoại trú chung
+Mô hình dữ liệu hồ sơ bệnh án ngoại trú chung BA-16 Bệnh án ngoại trú chung được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ngoại trú chung (BA-16)
+2.2.17 BA-17. Bệnh án ngoại trú mắt
+Mô hình dữ liệu hồ sơ bệnh án ngoại trú mắt BA-17 Bệnh án ngoại trú mắt được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ngoại trú mắt (BA-17)
+2.2.18 BA-18. Bệnh án ngoại trú răng hàm mặt
+Mô hình dữ liệu hồ sơ bệnh án ngoại trú răng hàm mặt BA-18 Bệnh án ngoại trú răng hàm mặt được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ngoại trú răng hàm mặt (BA-18)
+2.2.19 BA-19. Bệnh án ngoại trú phục hồi chức năng
+Mô hình dữ liệu hồ sơ bệnh án ngoại trú phục hồi chức năng BA-19 Bệnh án ngoại trú phục hồi chức năng được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án ngoại trú phục hồi chức năng (BA-19)
+2.2.20 BA-20. Bệnh án cấp cứu
+Mô hình dữ liệu hồ sơ bệnh án cấp cứu BA-20 Bệnh án cấp cứu được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án cấp cứu (BA-20)
+2.2.21 BA-21 Bệnh án cấp cứu ngoại viện
+Mô hình dữ liệu hồ sơ bệnh án cấp cứu ngoại viện BA-21 Bệnh án cấp cứu ngoại viện được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án cấp cứu ngoại viện (BA-21)
+2.2.22 BA-22. Bệnh án dùng cho tuyến xã phường
+Mô hình dữ liệu hồ sơ bệnh án dùng cho tuyến xã phường BA-22 Bệnh án dùng cho tuyến xã phường được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án dùng cho tuyến xã phường (BA-22)
+2.2.23 CK-01. Bệnh án mắt (Lác vận nhãn)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Lác vận nhãn) CK-01 Bệnh án mắt (Lác vận nhãn) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Lác vận nhãn) (CK-01)
+2.2.24 CK-02. Bệnh án mắt (Chấn thương)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Chấn thương) CK-02 Bệnh án mắt (Chấn thương) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Chấn thương) (CK-02)
+2.2.25 CK-03. Bệnh án mắt (Glocome)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Glocome) CK-03 Bệnh án mắt (Glocome) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Glocome) (CK-03)
+2.2.26 CK-04. Bệnh án mắt (Thể thủy tinh)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Thể thủy tinh) CK-04 Bệnh án mắt (Thể thủy tinh) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Thể thủy tinh) (CK-04)
+2.2.27 CK-05. Bệnh án mắt (Đáy mắt)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Đáy mắt) CK-05 Bệnh án mắt (Đáy mắt) được quy định tại:
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Đáy mắt) (CK-05)
+2.2.28 CK-06. Bệnh án mắt (Bán phần trước)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Bán phần trước) CK-06 Bệnh án mắt (Bán phần trước) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Bán phần trước) (CK-06)
+2.2.29 CK-07. Bệnh án mắt (Phẫu thuật khúc xạ)
+Mô hình dữ liệu hồ sơ bệnh án mắt (Phẫu thuật khúc xạ) CK-07 Bệnh án mắt (Phẫu thuật khúc xạ) được quy định tại: 
+Phụ lục Đặc tả cấu trúc hồ sơ bệnh án điện tử bệnh án mắt (Phẫu thuật khúc xạ) (CK-07)
+
+
+2.3 Lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử
+ Lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử quy định cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử. Định dạng của thông điệp dữ liệu hồ sơ bệnh án điện tử được trao đổi giữa các hệ thống thông tin được quy định như sau:
+Phần tử gốc: HSBADT_THONGDIEP
+Lược đồ cấu trúc thông điệp dữ liệu hồ sơ bệnh án điện tử quy định trong phụ lục C của tài liệu này và chứa phần tử gốc là HSBADT_THONGDIEP.
+Phần tử gốc chứa nhiều phần tử dữ liệu HSSK (hồ sơ sức khỏe điện  tử). Số lượng phần tử HSSK phụ thuộc vào mỗi lần thực hiện trao đổi dữ liệu
+2.3.1 Cấu trúc dữ liệu Thông tin đơn vị gửi (THONG_TIN_DON_VI)
+CSKCB (Cơ sở khám chữa bệnh)
+Mô tả cấu trúc dữ liệu
+
+2.3.2 Cấu trúc dữ liệu Thời gian (THOI_GIAN)
+Mô tả cấu trúc các trường thông tin sử dụng liên quan đến thời gian:
+
+
+PHƯƠNG PHÁP ĐÁNH GIÁ TUÂN THỦ
+Đối với phương thức trao đổi qua dịch vụ web: trích xuất lược đồ dữ liệu trong mô tả dịch vụ bằng ngôn ngữ WSDL được công khai kèm theo dịch vụ web để kiểm tra sự tuân thủ lược đồ dữ liệu.
+Đối với các phương thức trao đổi khác hoặc phương thức trao đổi qua dịch vụ web không thể hiện đầy đủ nội dung thông điệp dữ liệu chứa dữ liệu công dân: sử dụng toàn bộ thông điệp dữ liệu trao đổi để kiểm tra sự tuân thủ: 
+- Thu nhận và kiểm tra sự phù hợp của lược đồ được chỉ định và tham chiếu trong nội dung thông điệp dữ liệu XML qua không gian tên của lược đồ XML.
+- Kiểm tra sự nhất quán và không lỗi đối với tệp dữ liệu XML được thu nhận; kiểm tra sự tuân thủ và tham chiếu tường minh giữa dữ liệu XML và lược đồ XML.
+Nếu lược đồ dữ liệu sử dụng để trao đổi dữ liệu, thông điệp dữ liệu được trao đổi phù hợp với các quy định tại Mục 2 và các phụ lục bắt buộc của quy chuẩn này thì kết luận là đạt.
+Trường hợp lược đồ cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử được định nghĩa mở rộng để bổ sung các thuộc tính trao đổi không được quy định tại mục 2.3, lược đồ cấu trúc thông điệp dữ liệu hồ sơ sức khỏe điện tử được định nghĩa mở rộng phải tham chiếu (kế thừa) tới lược đồ dữ liệu hồ sơ sức khỏe điện tử và không định nghĩa lại cấu trúc dữ liệu hồ sơ sức khỏe điện tử thì kết luận là đạt.
+QUY ĐỊNH QUẢN LÝ
+Cấu trúc thông điệp dữ liệu công dân thuộc phạm vi điều chỉnh quy định tại mục 1.1 phải tuân thủ quy định tại tài liệu quy chuẩn kỹ thuật quốc gia này.
+TỔ CHỨC THỰC HIỆN
+- Cục Khoa học công nghệ và Đào tạo chủ trì, phối hợp với các cơ quan, đơn vị liên quan chỉ đạo, đôn đốc, hướng dẫn, kiểm tra việc thực hiện Thông tư này trên phạm vi toàn quốc.
+- Thủ trưởng đơn vị thuộc, trực thuộc Bộ Y tế, Y tế ngành, Giám đốc Sở Y tế các tỉnh, thành phố trực thuộc trung ương và các cơ quan, tổ chức, cá nhân có liên quan chịu trách nhiệm thi hành Thông tư này.
+Trong quá trình thực hiện nếu có khó khăn, vướng mắc, các cơ quan, tổ chức, cá nhân kịp thời phản ánh về Bộ Y tế (Cục Khoa học công nghệ và Đào tạo) để xem xét, giải quyết kịp thời./.
+6. PHỤ LỤC
+Phụ lục A: Mô hình dữ liệu về Bệnh án Điện tử
+
+Phụ lục B: Quy tắc chuyển đổi từ mô hình dữ liệu sang lược đồ dữ liệu
+Các quy tắc sau sẽ được sử dụng để chuyển đổi từ mô hình dữ liệu sang lược đồ XML của dữ liệu.
+1. Thêm hậu tố Structure vào cuối tên của cấu trúc trong mô hình dữ liệu và định nghĩa dưới dạng ComplexType trong lược đồ XML.
+2. Thêm hậu tố Type vào cuối tên kiểu dữ liệu trong mô hình dữ liệu và định nghĩa dưới dạng kiểu SimpleType trong lược đồ XML.
+3. Khai báo các kiểu dữ liệu nhận giá trị giới hạn trong các bảng mã được quy định tại các mục Cấu trúc và kiểu dữ liệu tham chiếu theo kiểu Enumeration trong lược đồ XML.
+4. Đối với kiểu chuỗi ký tự có chứa dấu cách: sử dụng kiểu dữ liệu tiêu chuẩn xsd:string trong lược đồ XML; đối với kiểu chuỗi ký tự không có dấu cách (các mã) sử dụng kiểu dữ liệu tiêu chuẩn xsd:token trong lược đồ XML.
+5. Kiểu dữ liệu hình ảnh, âm thanh (File): sử dụng kiểu dữ liệu tiêu chuẩn xsd:base64Binary trong lược đồ XML.
+Phụ lục C: Bảng dữ liệu danh mục
+C1. Loại Bệnh án (MA_LOAI_BENH_AN)
+
+C2. Thời điểm tử vong (THOI_DIEM_TU_VONG)
+C3. Danh mục giới tính (GIOI_TINH)
+C4. Danh mục dân tộc (DAN_TOC)
+Tham chiếu theo QCVN 109:2017/BTTTT
+
+C5. Danh mục mã đối tượng khám bệnh, chữa bệnh (DOI_TUONG_KCB)
+Ban hành kèm theo Quyết định số 824/QĐ-BYT ngày 15 tháng 02 năm 2023 của Bộ trưởng Bộ Y tế
+
+C6. Nghề nghiệp (NGHE_NGHIEP)
+Quyết định số 24/2020/QĐ-TTg ngày 26 tháng 11 năm 2020 và các văn bản sửa đổi, bổ sung
+
+C7. Tiếp nhận từ (TIEP_NHAN_TU)
+
+C8. Quốc tịch (QUOC_TICH)
+Tham chiếu theo QCVN 109:2017/BTTTT
+C9. Lý do ra viện (LY_DO_RA_VIEN)
+
+C10. Thủ thuật / Phẫu thuật (THU_THUAT_PHAU_THUAT)
+C11. Giải phẫu bệnh (GIAI_PHAU_BENH)
+C12. Tình trạng khi ra viện (TINH_TRANG_RA_VIEN)
+C13. Tình trạng sử dụng rượu, bia (RUOU_BIA)
+C14. Tình trạng da, niêm mạc (DA_NIEM_MAC)
+C15. Tình trạng kết mạc mắt (KET_MAC_MAT)
+C16. Tình trạng lưỡi (LUOI)
+C17. Vị trí phù (VI_TRI_PHU)
+C18. Vị trí hạch sờ được (VI_TRI_HACH)
+C19. Số lượng hạch sờ được (SO_LUONG_HACH)
+C20. Tính chất hạch (TINH_CHAT_HACH)
+C21. Độ lách to (DO_LACH)
+C22. Tình trạng ăn uống (AN_UONG)
+C23. Chế độ chăm sóc (CHE_DO_CHAM_SOC)
+C24. Chế độ dinh dưỡng (CHE_DO_DINH_DUONG)
+C27. Tình trạng tuyến giáp (TUYEN_GIAP)
+C28. Hạch ngoại vi (HACH_NGOAI)
+C29. Tiếng tim (TIENG_TIM)
+C30. Tình trạng phân (PHAN)
+C31. Cơ thắt hậu môn (CO_THAT_HAU_MON)
+C32. Tình trạng tinh hoàn (TINH_HOAN)
+C33. Tình trạng tuyến tiền liệt (TUYEN_TIEN_LIET)
+C34. Chiều dài chi so với bình thường (CHIEU_DAI_CHI)
+C35. Mạch ngoại vi (MACH_NGOAI)
+C36. Biên độ khớp so với bình thường (BIEN_DO_KHOP)
+C37. Mang thai nhờ kỹ thuật (MANG_THAI_NHO_KY_THUAT)
+C38. Tuổi thai (TUOI_THAI)
+C39. Cách thức sinh (CACH_THUC_SINH)
+C40. Tiên lượng (TIEN_LUONG)
+C41. Người khám (NGUOI_KHAM)
+C42. Tinh thần (TINH_THAN)
+C43. Khung chậu (KHUNG_CHAU)
+C44. Nước ối (NUOC_OI)
+C45. Độ lọt (DO_LOT_DELLE)
+C46. Kết quả xét nghiệm HIV (HIV)
+C47. Kết quả xét nghiệm viêm gan B (VIEM_GAN_B)
+C48. Kết quả xét nghiệm giang mai (GIANG_MAI)
+C49. Kết quả xét nghiệm đường huyết (DUONG_HUYET)
+C50. Kiểu sổ rau (KIEU_SO)
+C51. Âm đạo (AM_DAO)
+C52. Người đỡ đẻ/làm thủ thuật (NGUOI_DO_DE_LAM_THU_THUAT)
+C53. Mức độ phản vệ (MUC_DO_PHAN_VE)
+C54. Phát triển về tinh thần (PHAT_TRIEN_TINH_THAN)
+C55. Phát triển về vận động (PHAT_TRIEN_VAN_DONG)
+C56. Nuôi dưỡng (NUOI_DUONG)
+C57. Đã tiêm chủng (DA_TIEM_CHUNG)
+C58. Tri giác (TRI_GIAC)
+C59. Môi (MOI)
+C60. Dinh dưỡng (DINH_DUONG)
+C61. Bụng (BUNG)
+C62. Mỏm tim đập lệch (MOM_TIM_DAP_LECH)
+C63. Đi tiểu (DI_TIEU)
+C64. Loại co giật (LOAI_CO_GIAT)
+C65. Không rõ thời điểm khởi phát bệnh (KHONG_RO)
+C66. Dây rốn (DAY_RON)
+C67. Dựa vào (DUA_VAO)
+C68. Hút dịch (HUT_DICH)
+C69. Đặt nội khí quản (DAT_NOI_KHI_QUAN)
+C70. Thở oxy (THO_OXY)
+C71. Ấn ngực (AN_NGUC)
+C72. Bóp bóng (BOP_BONG)
+C73. Sử dụng Adrenalin (ADRENALIN)
+C74. Tiêm Vitamin K1 (VITAMIN_K1)
+C75. Tiêm vắc xin viêm gan B (VAC_XIN_VIEM_GAN_B)
+C76. Tiêm huyết thanh kháng viêm gan B (HUYET_THANH_KHANG_VG_B)
+C77. Tiêm vắc xin lao (LAO)
+C78. Bú mẹ trong 1 giờ đầu (BU_ME_TRONG_1_GIO)
+C79. Bú mẹ hoàn toàn (BU_ME_HOAN_TOAN)
+C80. Bú mẹ và ăn sữa công thức (BU_ME_VA_AN_SUA_CONG_THUC)
+C81. Sữa công thức hoàn toàn (SUA_CONG_THUC_HOAN_TOAN)
+C82. Mục đích khám (MUC_DICH_KHAM)
+C83. Xét nghiệm máu ngoại vi (MAU_NGOAI)
+C84. Xét nghiệm HPV (HPV)
+C85. Xét nghiệm đông máu (DONG_MAU)
+C86. Xét nghiệm tế bào cổ tử cung (TE_BAO_COTU_CUNG)
+C87. Xét nghiệm sinh hóa máu (SINH_HOA_MAU)
+C88. Nghiệm pháp VIA/VILI (VIA_VILI)
+C89. Siêu âm (SIEU_AM)
+C90. Soi cổ tử cung (SOI_COTU_CUNG)
+C91. Sinh thiết (SINH_THIET)
+C92. Loại biện pháp tránh thai (LOAI_BIEN_PHAP)
+C93. Điều trị tiền ung thư cổ tử cung (DIEU_TRI_TIEN_UNG_THU_COTU_CUNG)
+C94. Tai biến khi thực hiện biện pháp tránh thai (TAI_BIEN_TRANH_THAI)
+C100. Xuất huyết niêm mạc mắt (MAT)
+C101. Xuất huyết niêm mạc mũi (MUI)
+C102. Xuất huyết niêm mạc miệng (MIENG)
+C103. Tiểu máu (TIEU_MAU)
+C104. Rối loạn kinh nguyệt (ROI_LOAN_KINH_NGUYET)
+C105. Rụng tóc (RUNG_TOC)
+C106. Móng giòn dễ gãy (MONG_GION)
+C107. Tuyến giáp to (TO)
+C108. Tiếng thổi tuyến giáp (TIENG_THOI)
+C109. Hạch đau (DAU)
+C110. Ký hiệu độ bỏng (KY_HIEU)
+C111. Tiên lượng gần (TIEN_LUONG_GAN)
+C112. Tiên lượng xa (TIEN_LUONG_XA)
+C113. Rối loạn vận động (ROI_LOAN_VAN_DONG)
+C114. Hình dáng lồng ngực (HINH_DANG_LONG_NGUC)
+C115. Rì rào phế nang (RI_RAO_PHE_NANG)
+C116. Điểm đau bụng (DIEM_DAU)
+C117. Sẹo mổ cũ (SEO_MO_CU)
+C118. Gan to (GAN_TO)
+C119. Đồng ý với phương án điều trị (DONG_Y_PHUONG_AN_DIEU_TRI)
+C120. Ngủ gà (NGU_GA)
+C121. Lơ mơ (LO_MO)
+C122. Chấm, nốt xuất huyết (CHAMNOT_XUAT_HUYET)
+C123. Mảng bầm da (MANG_BAM_DA)
+C124. Tụ máu (TUMAU)
+C125. Hạch di động (DI_DONG)
+C126. Rụng cả lông và tóc (RUNG_LONG_TOC)
+C127. Vị trí tổn thương tóc/lông (VI_TRI_TOC_LONG)
+C128. Đặc điểm tổn thương tóc/lông (DAC_DIEM_TOC_LONG)
+C129. Kiểu hình tổn thương tóc/lông (KIEU_HINH_TOC_LONG)
+C130. Đặc điểm tổn thương móng (DAC_DIEM_THUONG_TON_MONG)
+C131. Vị trí tổn thương móng (VI_TRI_THUONG_TON_MONG)
+C132. Ngứa (NGUA)
+C133. Rát (RAT)
+C134. Mất cảm giác (MAT_CAM_GIAC)
+C135. Đau ngực (DAU_NGUC)
+C136. Hồi hộp đánh trống ngực (HOI_HOP_DANH_TRONG_NGUC)
+C137. Nhịp nhanh (NHIP_NHANH)
+C138. Nhịp chậm (NHIP_CHAM)
+C139. Loạn nhịp (LOAN_NHIP)
+C140. Diện đập của tim (DIEN_DAP_CUA_TIM)
+C141. Rung miu (RUNG_MIU)
+C142. Khó thở (KHO_THO)
+C143. Gõ (GO)
+C144. Rung thanh (RUNG_THANH)
+C145. Rale ẩm (RALE_AM)
+C146. Rale nổ (RALE_NO)
+C147. Rale rít (RALE_RIT)
+C148. Rale ngáy (RALE_NGAY)
+C149. Buồn nôn (BUON_NON)
+C150. Phản ứng thành bụng (PHAN_UNG_THANH_BUNG)
+C151. Máu tươi (MAU_TUOI)
+C152. Máu thâm (MAU_THAM)
+C153. Phân đen (PHAN_DEN)
+C154. Cổ trướng (CO_TRUONG)
+C155. Tuần hoàn bàng hệ (TUAN_HUAN_BANG_HE)
+C156. Tiểu buốt (TIEU_BUOT)
+C157. Tiểu rắt (TIEU_RAT)
+C158. Cầu bàng quang (CAU_BANG_QUANG)
+C159. Rung thận (RUNG_THAN)
+C160. Cổ cứng (CO_CUNG)
+C161. Dấu hiệu màng não (DAU_HIEU_MANG_NAO)
+C162. Trương lực cơ (TRUONG_LUC_CO)
+C163. Liệt ½ người phải (LIET_NUANGUOI_PHAI)
+C164. Liệt ½ người trái (LIET_NUANGUOI_TRAI)
+C165. Liệt 2 chi dưới (LIET_2_CHI_DUOI)
+C166. Liệt tứ chi (LIET_TU_CHI)
+C167. Dấu cứng khớp buổi sáng (DAU_CUNG_KHOP_BUOI_SANG)
+C168. Trạng thái nhãn áp (TRANG_THAI_NHAN_AP)
+C169. Trạng thái hốc mắt (TRANG_THAI_HOC_MAT)
+C170. Trạng thái nhãn cầu (TRANG_THAI_NHAN_CAU)
+C171. Trạng thái vận nhãn (TRANG_THAI_VAN_NHAN)
+C172. Trạng thái lệ đạo (TRANG_THAI_LE_DAO)
+C173. Trạng thái mi mắt (TRANG_THAI_MI_MAT)
+C174. Trạng thái giác mạc (TRANG_THAI_GIAC_MAC)
+C175. Trạng thái củng mạc (TRANG_THAI_CUNG_MAC)
+C176. Trạng thái tiền phòng (TRANG_THAI_TIEN_PHONG)
+C177. Trạng thái mống mắt (TRANG_THAI_MONG_MAT)
+C178. Trạng thái đồng tử (TRANG_THAI_DONG_TU)
+C179. Trạng thái thể thủy tinh (TRANG_THAI_THE_THUY_TINH)
+C180. Trạng thái dịch kính (TRANG_THAI_DICH_KINH)
+C181. Trạng thái đáy mắt (TRANG_THAI_DAY_MAT)
+C182. Thủ thuật phòng phẫu thuật (THU_THUAT_PHONG_PHAU_THUAT)
+C183. Tỉnh, tiếp xúc tốt (TINH_TIEPXUCTOT)
+C184. Tỉnh, tiếp xúc chậm (TINH_TIEPXUCCHAM)
+C185. Khe hở môi (KHE_HO_MOI)
+C186. Khe hở xương ổ răng (KHE_HO_XUONG_O_RANG)
+C187. Khe hở cung hàm (KHE_HO_CUNG_HAM)
+C188. Khe hở vòm miệng cứng (KHE_HO_VOM_MIENG_CUNG)
+C189. Khe hở vòm miệng mềm (KHE_HO_VOM_MIENG_MEM)
+C190. Trạng thái tai phải (TRANG_THAI_TAI_PHAI)
+C191. Trạng thái tai trái (TRANG_THAI_TAI_TRAI)
+C192. Trạng thái hình thể ngoài mũi (TRANG_THAI_HINH_THE_NGOAI_MUI)
+C193. Trạng thái hốc mũi phải (TRANG_THAI_HOCK_MUI_PHAI)
+C194. Trạng thái hốc mũi trái (TRANG_THAI_HOCK_MUI_TRAI)
+C195. Trạng thái vòm mũi họng (TRANG_THAI_VOM_MUI_HONG)
+C196. Trạng thái họng miệng (TRANG_THAI_HONG_MIENG)
+C197. Trạng thái hạ họng – thanh quản (TRANG_THAI_HA_HONG_THANH_QUAN)
+C198. Trạng thái vùng đầu cổ (TRANG_THAI_VUNG_DAU_CO)
+C199. Trạng thái hạch cổ (TRANG_THAI_HACH_CO)
+C201. Bại liệt (BAI_LIET)
+C202. Sởi (SOI)
+C203. Ho gà (HOGA)
+C204. Uốn ván (UON_VAN)
+C205. Bạch hầu (BACH_HAU)
+C206. Sụt cân (SUT_CAN)
+C207. Bú kém/ăn kém (BU_KEM_AN_KEM)
+C208. Bỏ bú/bỏ ăn (BO_BU_BO_AN)
+C209. Lệch trái (LECH_TRAI)
+C210. Lệch phải (LECH_PHAI)
+C211. Giật toàn thân (GIAT_TUAN_THAN)
+C212. Cục bộ (CUC_BO)
+C213. Tỉnh ngay sau giật (TINH_NGAY_SAU_GIAT)
+C214. Liên quan sốt cao (LIEN_QUAN_SOT_CAO)
+C215. Tiếp xúc (TIEP_XUC)
+C216. Cảm xúc (CAM_XUC)
+C217. Nhớ giả (NHO_GIA)
+C218. Bịa chuyện (BIA_CHUYEN)
+C219. Sang chấn tâm lý (SANG_CHAN_TAM_LY)
+C220. Khó vào giấc (KHO_VAO_GIAC)
+C221. Ngủ không sâu (NGU_KHONG_SAU)
+C222. Thức giấc sớm (THUC_GIAC_SOM)
+C223. Ngủ nhiều (NGU_NHIEU)
+C224. Ngủ mơ (NGU_MO)
+C225. Ác mộng (AC_MONG)
+C226. Hoảng sợ khi ngủ (HOANG_SO_KHI_NGU)
+C227. Miên hành (MIEN_HANH)
+C228. Ngủ ngáy (NGU_NGAY)
+C229. Ngừng thở khi ngủ (NGUNG_THO_KHI_NGU)
+C230. Co giật khi ngủ (CO_GIAT_KHI_NGU)
+C231. Hội chứng chân không yên (HOI_CHUNG_CHAN_KHONG_YEN)
+C232. Thời kỳ hoạt động tình dục (THOI_KY_HOAT_DONG_TINH_DUC)
+C233. Ưa chuộng tình dục (UA_CHUONG_TINH_DUC)
+C234. Vấn đề phân định giới tính (VAN_DE_PHAN_DINH_GIOI_TINH)
+C235. Xuất tinh sớm (XUAT_TINH_SOM)
+C236. Đau khi giao hợp (DAU_KHI_GIAO_HOP)
+C237. Giảm ham muốn (GIAM_HAM_MUON)
+C238. Rối loạn cương dương (ROI_LOAN_CUONG_DUONG)
+C239. Co thắt âm đạo (CO_THAT_AM_DAO)
+C240. Mức độ yên dịu, gây ngủ (MUC_DO_YEN_DIU_GAY_NGU)
+C241. Mức độ kích thần (MUC_DO_KICH_THAN)
+C242. Mức độ kích thần gây ảo giác (MUC_DO_KICH_THAN_GAY_AO_GIAC)
+C243. Mức độ gây ảo giác (MUC_DO_GAY_AO_GIAC)
+C244. Mức độ yên dịu gây ảo giác (MUC_DO_YEN_DIU_GAY_AO_GIAC)
+C245. Chống trầm cảm (CHONG_TRAM_CAM)
+C246. Giải lo âu (GIAI_LO_AU)
+C247. An dịu, gây ngủ (AN_DIU_GAY_NGU)
+C248. Chống loạn thần (CHONG_LOAN_THAN)
+C249. Chỉnh khí sắc (CHINH_KHI_SAC)
+C250. Thuốc kích thần (THUOC_KICH_THAN)
+C251. Nootropics (NOOTROPICS)
+C252. Liệu pháp gen (LIEU_PHAP_GEN)
+C253. Tế bào gốc (TE_BAO_GOC)
+C254. Kích thích từ xuyên sọ (TMS) (KICH_THICH_TU_XUYEN_SO_TMS)
+C255. Kích thích dòng điện một chiều xuyên sọ (tDCS) (KICH_THICH_DONG_DIEN_MOT_CHIEU_XUYEN_SO_TDCS)
+C256. Sốc điện (SOC_DIEN)
+C257. Kích thích não sâu (KICH_THICH_NAO_SAU)
+C258. Liệu pháp nhận thức-hành vi (LIEU_PHAP_NHAN_THUC)
+C259. Liệu pháp thư giãn (LIEU_PHAP_THU_GIAN)
+C260. Kích hoạt hành vi (KICH_HOAT_HANH_VI)
+C261. Hoạt động trị liệu (HOAT_DONG_TRI_LIEU)
+C262. Phương pháp can thiệp (PHUONG_PHAP_CAN_THIEP)
+C263. Phương pháp trị liệu (PHUONG_PHAP_TRI_LIEU)
+C264. Trạng thái toàn thân (TRANG_THAI_TOAN_THAN)
+C265. Trạng thái tuần hoàn (TRANG_THAI_TUAN_HOAN)
+C266. Trạng thái hô hấp (TRANG_THAI_HO_HAP)
+C267. Trạng thái tiêu hóa (TRANG_THAI_TIEU_HOA)
+C268. Trạng thái thận – tiết niệu (TRANG_THAI_THAN_TIET_NIEU)
+C269. Trạng thái thần kinh (TRANG_THAI_THAN_KINH)
+C270. Trạng thái cơ – xương – khớp (TRANG_THAI_CO_XUONG_KHOP)
+C271. Trạng thái tai – mũi – họng (TRANG_THAI_TAI_MUI_HONG)
+C272. Trạng thái răng – hàm – mặt (TRANG_THAI_RANG_HAM_MAT)
+C273. Trạng thái mắt (TRANG_THAI_MAT)
+C274. Trạng thái ngoài miệng (TRANG_THAI_NGOAI_MIENG)
+C275. Trạng thái trong miệng (TRANG_THAI_TRONG_MIENG)
+C276. Trạng thái chuyển sang khám ngoại trú (TRANG_THAI_CHUYEN_SANG)
+C277. Đơn thuốc (DON_THUOC)
+C278. Quay lại khám nếu có triệu chứng (QUAY_LAI_KHAM_NEU_CO_TRIEU_CHUNG)
+C279. Trạng thái yêu cầu nhập viện (TRANG_THAI_NHAP_VIEN)
+C280. Hiện trường cấp cứu (HIEN_TRUONG_CAP_CUU)
+C281. Chấn thương (CHAN_THUONG)
+C282. Bệnh lý (BENH_LY)
+C283. Lý do khác (LY_DO_KHAC)
+C284. Xử trí (XU_TRI)
+C285. Tử vong tại nhà, hiện trường (TAI_NHA_HIEN_TRUONG)
+C286. Tử vong trên đường đến bệnh viện (TREN_DUONG_DEN_BENH_VIEN)
+C287. Tử vong khi đến bệnh viện (KHI_DEN_BENH_VIEN)
+C288. Cải thiện (CAI_THIEN)
+C289. Không thay đổi (KHONG_THAY_DOI)
+C290. Xấu đi (XAU_DI)
+C291. Để lại (DE_LAI)
+C292. Chuyển viện (CHUYEN_VIEN)
+C293. Khác (KHAC)
+C294. Dị ứng (DI_UNG)
+C295. Chưa phát hiện bệnh lý (CHUA_PHAT_HIEN_BENH_LY)
+C296. Thử nghiệm che mắt (THU_NGHIEM_CHE_MAT)
+C297. Mắt chủ đạo (MAT_CHU_DAO)
+C298. Tương ứng võng mạc (TUONG_UNG_VONG_MAC)
+C299. Gia tăng (GIA_TANG)
+C300. Hạn chế (HAN_CHE)
+C301. Hình thái mắt phải (HINH_THAI_MAT_PHAI)
+C302. Hình thái mắt trái (HINH_THAI_MAT_TRAI)
+C303. Hình thái 2 mắt (HINH_THAI_2_MAT)
+C304. Trạng thái song thị (TRANG_THAI_SONG_THI)
+C305. Trung tâm định thị (TRUNG_TAM)
+C306. Cạnh tâm định thị (CANH_TAM)
+C307. Ngoại tâm định thị (NGOAI_TAM)
+C308. Dị vật hốc mắt (DI_VAT_HOC_MAT)
+C309. Tụ máu hốc mắt (TU_MAU_HOC_MAT)
+C310. Vỡ thành hốc mắt (VO_THANH_HOC_MAT)
+C311. Không có nhãn cầu (KHONG_CO_NHAN_CAU_MUC_CAT_BO)
+C312. Nhãn cầu không nguyên vẹn (NHAN_CAU_KHONG_NGUYEN_VEN_THUNG_RACH_VO)
+C313. Teo nhãn (TEO_NHAN)
+C314. Lồi (LOI)
+C315. Lác (LAC)
+C316. Rung giật nhãn cầu (RUNG_GIAT_NHAN_CAU)
+C317. Đứt lệ quản trên (DUT_LE_QUAN_TREN)
+C318. Đứt lệ quản dưới (DUT_LE_QUAN_DUOI)
+C319. Đứt lệ quản chung (DUT_LE_QUAN_CHUNG)
+C320. Tụ máu, sưng nề (TU_MAU_SUNG_NE)
+C321. Tràn khí dưới da (TRAN_KHI_DUOI_DA)
+C322. Đã khâu (DA_KHAU)
+C323. Hở mi (HO_MI)
+C324. Lớp rách mi (LOP)
+C325. Toàn bộ chiều dày (TOAN_BO_CHIEU_DAY)
+C326. Bờ mi (BO_MI)
+C327. Mất tổ chức (MAT_TO_CHUC_RACH_MI)
+C328. Mi trên (MI_TREN)
+C329. Mi dưới (MI_DUOI)
+C330. Rách kết mạc (RACH_KET_MAC)
+C331. Dị vật kết mạc (DI_VAT_KET_MAC)
+C332. Thiếu máu rìa (THIEU_MAU_RIA)
+C333. Tỏa lan (TOA_LAN)
+C334. Rìa (RIA)
+C335. Phù giác mạc (PHU)
+C336. Sẹo giác mạc (SEO)
+C337. Dị vật giác mạc (DI_VAT_GIAC_MAC)
+C338. Ngấm máu (NGAM_MAU)
+C339. Trợt giác mạc (TROT)
+C340. Rách gọn (RACH_GON)
+C341. Nham nhở (NHAM_NHO)
+C342. Mất tổ chức (MAT_TO_CHUC_RACH)
+C343. Kẹt tổ chức nội nhãn (KET_TO_CHUC_NOI_NHAN)
+C344. Đúng giải phẫu (DUNG_GIAI_PHAU)
+C345. Không đúng giải phẫu (KHONG_DUNG_GIAI_PHAU)
+C346. Chưa khâu (CHUA_KHAU)
+C347. Kẹt tổ chức (KET_TO_CHUC)
+C348. Vùng 1 (VUNG_1)
+C349. Vùng 2 (VUNG_2)
+C350. Vùng 3 (VUNG_3)
+C351. Không quan sát được (KHONG_QUAN_SAT_DUOC)
+C352. Sâu (SAU)
+C353. Nông (NONG)
+C354. Xẹp tiền phòng (XEP_TIEN_PHONG)
+C355. Chất thể thủy tinh (CHAT_THE_THUY_TINH)
+C356. Mủ (MU)
+C357. Xuất tiết (XUAT_TIET)
+C358. Tyndall (TYNDALL)
+C359. Đứt chân mống mắt (DUT_CHAN_MONG_MAT)
+C360. Mất mống mắt (MAT_MONG_MAT)
+C361. Rách, thủng mống mắt (RACH_THUNG_MONG_MAT)
+C362. Tròn (TRON)
+C363. Méo (MEO)
+C364. Phản xạ tốt (TOT_PHAN_XA)
+C365. Phản xạ kém (KEM)
+C366. Phản xạ mất (MAT_PHAN_XA)
+C367. RAPD (RAPD)
+C368. Ánh đồng tử hồng (HONG)
+C369. Còn thể thủy tinh (CON_THE_THUY_TINH)
+C370. Trong (THE_THUY_TINH_TRONG)
+C371. Đục (THE_THUY_TINH_DUC)
+C372. Vỡ (THE_THUY_TINH_VO)
+C373. IOL (IOL)
+C374. Lệch IOL (LECH_IOL)
+C375. Đục bao sau (DUC_BAO_SAU)
+C376. Ra tiền phòng (RA_TIEN_PHONG)
+C377. Vào buồng dịch kính (VAO_BUONG_DICH_KINH)
+C378. Trong dịch kính (DICH_KINH_TRONG)
+C379. Đục dịch kính (DICH_KINH_DUC)
+C380. Tổ chức hóa (TO_CHUC_HOA)
+C381. Bong dịch kính sau (BONG_DICH_KINH_SAU)
+C382. Không soi được đáy mắt (KHONG_SOI_DUOC_DAY_MAT)
+C383. Bong hắc mạc (BONG_HAC_MAC)
+C384. Rạn màng Bruch (RAN_MANG_BRUCH)
+C385. Bình thường (BINH_THUONG)
+C386. Phù gai (PHU_GAI)
+C387. Bạc màu gai thị (BAC_MAU_GAI_THI)
+C388. Bong võng mạc (BONG_VONG_MAC)
+C389. Vết rách võng mạc (VET_RACH_VONG_MAC)
+C390. Sẹo võng mạc (SEO_VONG_MAC)
+C391. Chấn thương (CHAN_THUONG_MAT)
+C392. Loại dị vật (LOAI_DI_VAT)
+C393. Độ sụp mi (DO_SUP_MI)
+C394. Loại rách mi (LOAI_RACH_MI)
+C395. Loại cương tụ (LOAI_CUONG_TU)
+C396. Loại tổn thương (LOAI_TON_THUONG)
+C397. Lý do vào viện mắt phải (MAT_PHAI_LY_DO_GLOCOM)
+C398. Lý do vào viện mắt trái (MAT_TRAI_LY_DO_GLOCOM)
+C399. Sợ ánh sáng, chảy nước mắt (SO_ANH_SANG_CHAY_NUOC_MAT)
+C400. Đỏ mắt (DO_MAT)
+C401. Nhức mắt dữ dội (NHUC_MAT_DU_DOI)
+C402. Nhức mắt vừa (NHUC_MAT_VUA)
+C403. Nhức mắt nhẹ (NHUC_MAT_NHE)
+C404. Không nhức mắt (NHUC_MAT_KHONG)
+C405. Mờ đột ngột (MO_DOT_NGOT)
+C406. Mờ từng lúc (MO_TUNG_LUC)
+C407. Sương mù (SUONG_MU)
+C408. Không mờ (KHONG_MO)
+C409. Mờ tăng dần (MO_TANG_DAN)
+C410. Nhìn thu hẹp (NHIN_THU_HEP)
+C411. Quầng tán sắc (QUANG_TAN_SAC)
+C412. Đau đầu (DAU_DAU)
+C413. Nôn (NON)
+C414. Trung ương (TRUNG_UONG)
+C415. Thuốc (THUOC)
+C416. Laser (LASER)
+C417. Loại phẫu thuật Glôcôm (LOAI_PHAU_THUAT_GLOCOM)
+C418. Đường dùng (DUONG_DUNG)
+C419. Số loại thuốc (SO_LOAI_THUOC)
+C420. Cận thị (CAN_THI)
+C421. Viễn thị (VIEN_THI)
+C422. Viêm màng bồ đào (VIEM_MANG_BO_DAO)
+C423. Viêm phần trước nhãn cầu (VIEM_PHAN_TRUOC_NHAN_CAU)
+C424. Tắc tĩnh mạch trung tâm võng mạc (TAC_TMTTVM)
+C425. Đường dùng corticosteroid (DUONG_DUNG_CORTICOSTEROID)
+C426. Theo chỉ định của bác sĩ (THEO_CHI_DINH_CUA_BAC_SY)
+C427. Bệnh nhân tự dùng thuốc (BENH_NHAN_TU_DUNG_THUOC)
+C428. Bệnh tim mạch (BENH_TIM_MACH)
+C429. Huyết áp (HUYET_AP)
+C430. Đái tháo đường (DAI_THAO_DUONG)
+C431. Thông động mạch cảnh - xoang hang (THONG_DONGMACHCANH_XOANGHANG)
+C432. Trạng thái tiền sử glôcôm gia đình (TRANG_THAI_TIEN_SU_BENH_TRONG_GIA_DINH)
+C433. Ông, bà (ONG_BA)
+C434. Bố, mẹ (BO_ME)
+C435. Anh, chị, em (ANH_CHI_EM)
+C436. Cô, dì, chú, bác (CO_DI_CHU_BAC)
+C437. Tình trạng Tốt (TOT)
+C438. Tình trạng Dẹt (DET)
+C439. Tình trạng Xơ (XO)
+C440. Tình trạng Mỏng (MONG)
+C441. Tình trạng Quá phát (QUA_PHAT)
+C442. Tình trạng Trong suốt (TINH_TRANG_TRONG_SUOT)
+C443. Tình trạng Dãn lồi (DAN_LOI)
+C444. Trạng thái thoái hóa (TRANG_THAI_THOAI_HOA)
+C445. Phản xạ (PHAN_XA)
+C446. Tình trạng Nhân (NHAN)
+C447. Tình trạng Vỏ (VO)
+C448. Tình trạng Dưới bao (DUOI_BAO)
+C449. Tình trạng Toàn bộ (TOAN_BO)
+C450. Tình trạng Lệch (LECH)
+C451. Tình trạng Không T3 (KHONG_T3)
+C452. Tình trạng Tân mạch (TAN_MACH)
+C453. Tình trạng Khuyết viền thần kinh (KHUYET_VIEN_THAN_KINH)
+C454. Vị trí khuyết (VI_TRI_KHUYET)
+C455. Trạng thái Chuyển hướng (CHUYEN_HUONG)
+C456. Trạng thái Gập góc (GAP_GOC)
+C457. Chưa điều trị (CHUA_DIEU_TRI)
+C458. Tiền sử tại mắt (TAI_MAT)
+C459. Bất thường gia đình (BAT_THUONG)
+C460. Độ 1 đục thể thủy tinh (DO1_THE_THUY_TINH)
+C461. Độ 2 đục thể thủy tinh (DO2_THE_THUY_TINH)
+C462. Độ 3 đục thể thủy tinh (DO3_THE_THUY_TINH)
+C463. Độ 4 đục thể thủy tinh (DO4_THE_THUY_TINH)
+C464. Độ 5 đục thể thủy tinh (DO5_THE_THUY_TINH)
+C465. Lệch thể thủy tinh bẩm sinh (BAMSINH_LECH_THE_THUY_TINH)
+C466. IOL cân (CAN_IOL)
+C467. Trạng thái đĩa thị giác (TRANG_THAI_DIA_THI_GIAC)
+C468. Trạng thái hoàng điểm (TRANG_THAI_HOANG_DIEM)
+C469. Trạng thái võng mạc ngoài hoàng điểm (TRANG_THAI_VONG_MAC_NGOAI_HOANG_DIEM)
+C470. Trạng thái động mạch (TRANG_THAI_DONG_MACH)
+C471. Trạng thái tĩnh mạch (TRANG_THAI_TINH_MACH)
+C472. Ghép giác mạc (GHEP_GIAC_MAC)
+C473. Trạng thái biểu mô (TRANG_THAI_BIEU_MO)
+C474. Trạng thái nhu mô (TRANG_THAI_NHU_MO)
+C475. Trạng thái nội mô và Descemet (TRANG_THAI_NOI_MO_VA_DESCEMET)
+C476. Trạng thái cảm giác giác mạc (TRANG_THAI_CAM_GIAC_GIAC_MAC)
+C477. Trạng thái thời gian vỡ phim nước mắt (TBUT) (TRANG_THAI_TBUT)
+C478. Trạng thái chiều cao liềm nước mắt (TRANG_THAI_CHIEU_CAO_LIEM_NUOC_MAT)
+C479. Chiều cao liềm nước mắt cao (CAO_LIEM_NUOC_MAT)
+C480. Chiều cao liềm nước mắt thấp (THAP_LIEM_NUOC_MAT)
+C481. Chiều cao liềm nước mắt bình thường (BINH_THUONG_LIEM_NUOC_MAT)
+C482. Trạng thái Test Schirmer I (TRANG_THAI_SCHIRMER)
+C483. Không muốn sử dụng kính (KHONG_MUON_SU_DUNG_KINH)
+C484. Công việc không cho phép sử dụng kính (CONG_VIEC_KHONG_CHO_PHEP_SU_DUNG_KINH)
+C485. Không muốn đeo kính tiếp xúc (KHONG_MUON_DEO_KINH_TIEP_XUC)
+C486. Thẩm mỹ (THAM_MY)
+C487. Lý do khác về mắt (LY_DO_VE_MAT)
+C488. Đã dừng đeo kính tiếp xúc (DA_DUNG_DEO_KINH_TIEP_XUC)
+C489. Đã điều trị (DA_DIEU_TRI)
+C490. Đeo kính gọng (DEO_KINH_GONG)
+C491. Đeo kính tiếp xúc mềm (DEO_KINH_TIEP_XUC_MEM)
+C492. Đeo kính tiếp xúc cứng ban ngày (DEO_KINH_TIEP_XUC_CUNG_BAN_NGAY)
+C493. Đeo kính tiếp xúc cứng ban đêm (OrthoK) (DEO_KINH_TIEP_XUC_CUNG_BAN_DEM_ORTHOK)
+C494. Dưới 6 tháng (DUOI_6_THANG)
+C495. Trên 6 tháng (TREN_6_THANG)
+C496. Đang mang thai (DANG_MANG_THAI)
+C497. Đang cho con bú (DANG_CHO_CON_BU)
+C498. Trạng thái phẫu thuật khúc xạ (TRANG_THAI_PHAU_THUAT_KHUC_XA)
+C499. Trạng thái phẫu thuật thể thủy tinh (TRANG_THAI_PHAU_THUAT_THE_THUY_TINH)
+C500. Trạng thái phẫu thuật khác (TRANG_THAI_PHAU_THUAT_KHAC)
+C501. Trạng thái sử dụng thuốc toàn thân (TRANG_THAI_THUOC_TOAN_THAN)
+
+
+Phụ lục D: Lược đồ cấu trúc thông điệp dữ liệu Bệnh án Điện tử
+
+D1: Định dạng dữ liệu xml chứa thông điệp trao đổi dữ liệu hồ sơ bệnh án điện tử. Tệp HSBADT.exchange.xml
+
+
+D2: Định dạng dữ liệu JSON chứa thông điệp trao đổi dữ liệu hồ sơ bệnh án điện tử. Tệp HSBADT.exchange.data.json
+
+
+
